@@ -1,2 +1,3 @@
 # GCMT
-Graph Consistency based Mean-Teaching for Unsupervised Domain Adaptive Person Re-Identification. IJCAI 2021
+Graph Consistency based Mean-Teaching for Unsupervised Domain Adaptive Person Re-Identification. Xibin Liu, Shiliang Zhang. IJCAI 2021
+
