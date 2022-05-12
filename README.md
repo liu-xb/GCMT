@@ -1,4 +1,4 @@
-# [GCMT](https://www.ijcai.org/proceedings/2021/121)
+# [Graph Consistency based Mean-Teaching for Unsupervised Domain Adaptive Person Re-Identification](https://www.ijcai.org/proceedings/2021/121)
 <img src='ijcai21.jpg' width = '100%'>   
 
 Codes of our IJCAI 2021 paper "Graph Consistency based Mean-Teaching for Unsupervised Domain Adaptive Person Re-Identification. Xiaobin Liu, Shiliang Zhang. IJCAI 2021".
