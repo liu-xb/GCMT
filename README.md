@@ -1,11 +1,9 @@
 # [GCMT](https://www.ijcai.org/proceedings/2021/121)
 <img src='ijcai21.jpg' width = '100%'>   
-<!-- ![](ijcai21.jpg) -->
 
-Codes of our IJCAI 2021 paper "Graph Consistency based Mean-Teaching for Unsupervised Domain Adaptive Person Re-Identification. Xibin Liu, Shiliang Zhang. IJCAI 2021".
+Codes of our IJCAI 2021 paper "Graph Consistency based Mean-Teaching for Unsupervised Domain Adaptive Person Re-Identification. Xiaobin Liu, Shiliang Zhang. IJCAI 2021".
 
-Run `python train.py` will train the unsupervised model on Market-1501 dataset. The unsupervised model trained on Market-1501 can be downloaded from [here](), which achieves % and % in mAP and Rank1 accuracy, respectively.
-
+Run `python train.py` will train the unsupervised model on Market-1501 dataset. The unsupervised model trained on Market-1501 can be downloaded from [here](), which achieves % and % in mAP and Rank1 accuracy, respectively. (As DukeMTMC-reID dataset is no longer available, we do not release models related with this dataset.)
 
 If you find this paper useful, please kindly cite our paper as follows:
 
