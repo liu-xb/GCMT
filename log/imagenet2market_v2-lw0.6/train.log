@@ -1,0 +1,2211 @@
+2022-05-13 16:42:13.561435
+==========
+dataset_target : market
+batch_size : 64
+workers : 8
+num_clusters : 500
+height : 256
+width : 128
+num_instances : 16
+arch : resnet50
+features : 0
+dropout : 0.5
+lr : 0.00035
+momentum : 0.9
+alpha : 0.999
+weight_decay : 0.0005
+epochs : 120
+start_epoch : 0
+iters : 400
+loss_weight : 0.6
+beta : 0.05
+k : 12
+init_1 : 
+seed : 1
+print_freq : 100
+eval_step : 1
+resume : 0
+scatter : 1
+data_dir : /data/ceph_11015/ssd/xbinliu/reid/data/
+logs_dir : log/imagenet2market_v2-lw0.6
+==========
+=> Market1501 loaded
+Dataset statistics:
+  ----------------------------------------
+  subset   | # ids | # images | # cameras
+  ----------------------------------------
+  train    |   751 |    12936 |         6
+  query    |   750 |     3368 |         6
+  gallery  |   751 |    15913 |         6
+  ----------------------------------------
+extracting......Extract Features: [1/203]	Time 2.044 (2.044)	Data 1.269 (1.269)	**Extract Features: [100/203]	Time 0.184 (0.120)	Data 0.000 (0.017)	**Extract Features: [200/203]	Time 0.095 (0.110)	Data 0.000 (0.010)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:000] [001/400] | Loss: 5.520 | Ce: 5.716 | Entropy: 0.165 | GCC: 1.966 | Acc: 6.2%
+[Epoch:000] [100/400] | Loss: 5.298 | Ce: 5.388 | Entropy: 0.358 | GCC: 1.497 | Acc: 8.4%
+[Epoch:000] [200/400] | Loss: 5.133 | Ce: 5.020 | Entropy: 0.370 | GCC: 1.478 | Acc: 14.2%
+[Epoch:000] [300/400] | Loss: 5.018 | Ce: 4.835 | Entropy: 0.384 | GCC: 1.441 | Acc: 17.0%
+[Epoch:000] [400/400] | Loss: 4.907 | Ce: 4.664 | Entropy: 0.394 | GCC: 1.425 | Acc: 20.0%
+extracting......Extract Features: [1/302]	Time 1.259 (1.259)	Data 1.100 (1.100)	**Extract Features: [100/302]	Time 0.097 (0.113)	Data 0.000 (0.016)	**Extract Features: [200/302]	Time 0.094 (0.108)	Data 0.000 (0.011)	**Extract Features: [300/302]	Time 0.094 (0.105)	Data 0.000 (0.008)	**extracting done     
+Mean AP: 5.7%
+
+ * Finished epoch   0  model no.1 mAP:  5.7% best:  5.7% *
+2022-05-13 16:47:29.452374
+Cost 0:05:15.890963
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.232 (1.232)	Data 1.135 (1.135)	**Extract Features: [100/203]	Time 0.096 (0.106)	Data 0.000 (0.012)	**Extract Features: [200/203]	Time 0.094 (0.101)	Data 0.000 (0.006)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:001] [001/400] | Loss: 4.533 | Ce: 6.607 | Entropy: 1.558 | GCC: 1.315 | Acc: 17.2%
+[Epoch:001] [100/400] | Loss: 4.176 | Ce: 5.089 | Entropy: 1.851 | GCC: 1.575 | Acc: 19.8%
+[Epoch:001] [200/400] | Loss: 3.897 | Ce: 4.617 | Entropy: 1.576 | GCC: 1.586 | Acc: 24.8%
+[Epoch:001] [300/400] | Loss: 3.787 | Ce: 4.423 | Entropy: 1.444 | GCC: 1.580 | Acc: 26.7%
+[Epoch:001] [400/400] | Loss: 3.711 | Ce: 4.269 | Entropy: 1.352 | GCC: 1.581 | Acc: 28.5%
+extracting......Extract Features: [1/302]	Time 1.368 (1.368)	Data 1.272 (1.272)	**Extract Features: [100/302]	Time 0.242 (0.119)	Data 0.145 (0.021)	**Extract Features: [200/302]	Time 0.114 (0.121)	Data 0.000 (0.022)	**Extract Features: [300/302]	Time 0.096 (0.121)	Data 0.000 (0.022)	**extracting done     
+Mean AP: 7.0%
+
+ * Finished epoch   1  model no.1 mAP:  7.0% best:  7.0% *
+2022-05-13 16:54:05.509743
+Cost 0:11:51.948367
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 2.408 (2.408)	Data 2.309 (2.309)	**Extract Features: [100/203]	Time 0.097 (0.125)	Data 0.000 (0.024)	**Extract Features: [200/203]	Time 0.178 (0.123)	Data 0.080 (0.023)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:002] [001/400] | Loss: 4.273 | Ce: 5.465 | Entropy: 1.038 | GCC: 1.806 | Acc: 21.9%
+[Epoch:002] [100/400] | Loss: 3.696 | Ce: 4.274 | Entropy: 1.365 | GCC: 1.608 | Acc: 26.5%
+[Epoch:002] [200/400] | Loss: 3.571 | Ce: 4.065 | Entropy: 1.255 | GCC: 1.594 | Acc: 29.3%
+[Epoch:002] [300/400] | Loss: 3.515 | Ce: 3.936 | Entropy: 1.193 | GCC: 1.594 | Acc: 31.5%
+[Epoch:002] [400/400] | Loss: 3.472 | Ce: 3.832 | Entropy: 1.144 | GCC: 1.602 | Acc: 33.4%
+extracting......Extract Features: [1/302]	Time 1.217 (1.217)	Data 1.118 (1.118)	**Extract Features: [100/302]	Time 0.094 (0.106)	Data 0.000 (0.012)	**Extract Features: [200/302]	Time 0.095 (0.100)	Data 0.000 (0.006)	**Extract Features: [300/302]	Time 0.171 (0.104)	Data 0.067 (0.008)	**extracting done     
+Mean AP: 8.3%
+
+ * Finished epoch   2  model no.1 mAP:  8.3% best:  8.3% *
+2022-05-13 17:00:25.788459
+Cost 0:18:12.227064
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 2.647 (2.647)	Data 2.549 (2.549)	**Extract Features: [100/203]	Time 0.096 (0.129)	Data 0.000 (0.030)	**Extract Features: [200/203]	Time 0.096 (0.129)	Data 0.000 (0.030)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:003] [001/400] | Loss: 3.246 | Ce: 3.566 | Entropy: 0.795 | GCC: 1.612 | Acc: 40.6%
+[Epoch:003] [100/400] | Loss: 3.473 | Ce: 3.878 | Entropy: 1.070 | GCC: 1.616 | Acc: 31.4%
+[Epoch:003] [200/400] | Loss: 3.422 | Ce: 3.741 | Entropy: 1.032 | GCC: 1.616 | Acc: 33.8%
+[Epoch:003] [300/400] | Loss: 3.373 | Ce: 3.656 | Entropy: 0.987 | GCC: 1.600 | Acc: 35.0%
+[Epoch:003] [400/400] | Loss: 3.338 | Ce: 3.569 | Entropy: 0.948 | GCC: 1.607 | Acc: 37.1%
+extracting......Extract Features: [1/302]	Time 1.618 (1.618)	Data 1.522 (1.522)	**Extract Features: [100/302]	Time 0.095 (0.110)	Data 0.000 (0.015)	**Extract Features: [200/302]	Time 0.095 (0.103)	Data 0.000 (0.008)	**Extract Features: [300/302]	Time 0.094 (0.100)	Data 0.000 (0.005)	**extracting done     
+Mean AP: 8.9%
+
+ * Finished epoch   3  model no.1 mAP:  8.9% best:  8.9% *
+2022-05-13 17:05:57.616378
+Cost 0:23:44.054973
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.261 (1.261)	Data 1.164 (1.164)	**Extract Features: [100/203]	Time 0.096 (0.110)	Data 0.000 (0.012)	**Extract Features: [200/203]	Time 0.094 (0.112)	Data 0.000 (0.014)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:004] [001/400] | Loss: 3.346 | Ce: 4.136 | Entropy: 0.652 | GCC: 1.530 | Acc: 42.2%
+[Epoch:004] [100/400] | Loss: 3.430 | Ce: 3.761 | Entropy: 0.932 | GCC: 1.605 | Acc: 32.1%
+[Epoch:004] [200/400] | Loss: 3.379 | Ce: 3.623 | Entropy: 0.905 | GCC: 1.621 | Acc: 35.1%
+[Epoch:004] [300/400] | Loss: 3.335 | Ce: 3.528 | Entropy: 0.870 | GCC: 1.613 | Acc: 37.1%
+[Epoch:004] [400/400] | Loss: 3.289 | Ce: 3.437 | Entropy: 0.837 | GCC: 1.606 | Acc: 39.0%
+extracting......Extract Features: [1/302]	Time 1.385 (1.385)	Data 1.289 (1.289)	**Extract Features: [100/302]	Time 0.094 (0.108)	Data 0.000 (0.013)	**Extract Features: [200/302]	Time 0.094 (0.101)	Data 0.000 (0.007)	**Extract Features: [300/302]	Time 0.094 (0.099)	Data 0.000 (0.005)	**extracting done     
+Mean AP: 9.8%
+
+ * Finished epoch   4  model no.1 mAP:  9.8% best:  9.8% *
+2022-05-13 17:10:56.317676
+Cost 0:28:42.756266
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.458 (1.458)	Data 1.362 (1.362)	**Extract Features: [100/203]	Time 0.102 (0.114)	Data 0.000 (0.015)	**Extract Features: [200/203]	Time 0.111 (0.120)	Data 0.000 (0.020)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:005] [001/400] | Loss: 3.052 | Ce: 3.429 | Entropy: 0.536 | GCC: 1.609 | Acc: 42.2%
+[Epoch:005] [100/400] | Loss: 3.314 | Ce: 3.586 | Entropy: 0.811 | GCC: 1.581 | Acc: 34.8%
+[Epoch:005] [200/400] | Loss: 3.235 | Ce: 3.432 | Entropy: 0.790 | GCC: 1.566 | Acc: 38.0%
+[Epoch:005] [300/400] | Loss: 3.178 | Ce: 3.316 | Entropy: 0.761 | GCC: 1.560 | Acc: 40.8%
+[Epoch:005] [400/400] | Loss: 3.131 | Ce: 3.232 | Entropy: 0.735 | GCC: 1.543 | Acc: 43.0%
+extracting......Extract Features: [1/302]	Time 1.684 (1.684)	Data 1.588 (1.588)	**Extract Features: [100/302]	Time 0.094 (0.111)	Data 0.000 (0.016)	**Extract Features: [200/302]	Time 0.094 (0.103)	Data 0.000 (0.008)	**Extract Features: [300/302]	Time 0.094 (0.100)	Data 0.000 (0.006)	**extracting done     
+Mean AP: 9.9%
+
+ * Finished epoch   5  model no.1 mAP:  9.9% best:  9.9% *
+2022-05-13 17:16:12.192373
+Cost 0:33:58.630969
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.298 (1.298)	Data 1.202 (1.202)	**Extract Features: [100/203]	Time 0.095 (0.107)	Data 0.000 (0.012)	**Extract Features: [200/203]	Time 0.094 (0.101)	Data 0.000 (0.006)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:006] [001/400] | Loss: 3.471 | Ce: 4.134 | Entropy: 0.617 | GCC: 1.357 | Acc: 32.8%
+[Epoch:006] [100/400] | Loss: 3.104 | Ce: 3.329 | Entropy: 0.722 | GCC: 1.467 | Acc: 39.4%
+[Epoch:006] [200/400] | Loss: 3.074 | Ce: 3.231 | Entropy: 0.701 | GCC: 1.473 | Acc: 41.9%
+[Epoch:006] [300/400] | Loss: 3.031 | Ce: 3.150 | Entropy: 0.678 | GCC: 1.462 | Acc: 44.0%
+[Epoch:006] [400/400] | Loss: 2.994 | Ce: 3.074 | Entropy: 0.656 | GCC: 1.461 | Acc: 46.3%
+extracting......Extract Features: [1/302]	Time 1.531 (1.531)	Data 1.434 (1.434)	**Extract Features: [100/302]	Time 0.094 (0.114)	Data 0.000 (0.019)	**Extract Features: [200/302]	Time 0.097 (0.105)	Data 0.000 (0.010)	**Extract Features: [300/302]	Time 0.094 (0.102)	Data 0.000 (0.007)	**extracting done     
+Mean AP: 10.9%
+
+ * Finished epoch   6  model no.1 mAP: 10.9% best: 10.9% *
+2022-05-13 17:22:02.541339
+Cost 0:39:48.979937
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.262 (1.262)	Data 1.165 (1.165)	**Extract Features: [100/203]	Time 0.095 (0.106)	Data 0.000 (0.012)	**Extract Features: [200/203]	Time 0.095 (0.102)	Data 0.000 (0.006)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:007] [001/400] | Loss: 3.040 | Ce: 3.574 | Entropy: 0.399 | GCC: 1.313 | Acc: 43.8%
+[Epoch:007] [100/400] | Loss: 2.972 | Ce: 3.195 | Entropy: 0.674 | GCC: 1.397 | Acc: 42.4%
+[Epoch:007] [200/400] | Loss: 2.933 | Ce: 3.091 | Entropy: 0.649 | GCC: 1.403 | Acc: 45.2%
+[Epoch:007] [300/400] | Loss: 2.903 | Ce: 3.027 | Entropy: 0.636 | GCC: 1.399 | Acc: 46.7%
+[Epoch:007] [400/400] | Loss: 2.883 | Ce: 2.977 | Entropy: 0.617 | GCC: 1.399 | Acc: 48.1%
+extracting......Extract Features: [1/302]	Time 1.599 (1.599)	Data 1.502 (1.502)	**Extract Features: [100/302]	Time 0.099 (0.111)	Data 0.000 (0.015)	**Extract Features: [200/302]	Time 0.095 (0.103)	Data 0.000 (0.008)	**Extract Features: [300/302]	Time 0.094 (0.100)	Data 0.000 (0.005)	**extracting done     
+Mean AP: 11.7%
+
+ * Finished epoch   7  model no.1 mAP: 11.7% best: 11.7% *
+2022-05-13 17:27:34.648469
+Cost 0:45:21.087064
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.277 (1.277)	Data 1.180 (1.180)	**Extract Features: [100/203]	Time 0.327 (0.124)	Data 0.231 (0.026)	**Extract Features: [200/203]	Time 0.096 (0.122)	Data 0.000 (0.023)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:008] [001/400] | Loss: 2.565 | Ce: 2.560 | Entropy: 0.394 | GCC: 1.552 | Acc: 68.8%
+[Epoch:008] [100/400] | Loss: 2.924 | Ce: 3.117 | Entropy: 0.631 | GCC: 1.381 | Acc: 44.1%
+[Epoch:008] [200/400] | Loss: 2.876 | Ce: 3.015 | Entropy: 0.609 | GCC: 1.375 | Acc: 46.9%
+[Epoch:008] [300/400] | Loss: 2.845 | Ce: 2.945 | Entropy: 0.592 | GCC: 1.364 | Acc: 48.9%
+[Epoch:008] [400/400] | Loss: 2.812 | Ce: 2.879 | Entropy: 0.577 | GCC: 1.355 | Acc: 50.6%
+extracting......Extract Features: [1/302]	Time 1.526 (1.526)	Data 1.429 (1.429)	**Extract Features: [100/302]	Time 0.096 (0.109)	Data 0.000 (0.015)	**Extract Features: [200/302]	Time 0.094 (0.102)	Data 0.000 (0.007)	**Extract Features: [300/302]	Time 0.094 (0.100)	Data 0.000 (0.005)	**extracting done     
+Mean AP: 12.4%
+
+ * Finished epoch   8  model no.1 mAP: 12.4% best: 12.4% *
+2022-05-13 17:32:38.029168
+Cost 0:50:24.467779
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.529 (1.529)	Data 1.433 (1.433)	**Extract Features: [100/203]	Time 0.094 (0.109)	Data 0.000 (0.015)	**Extract Features: [200/203]	Time 0.153 (0.156)	Data 0.058 (0.062)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:009] [001/400] | Loss: 2.748 | Ce: 3.051 | Entropy: 0.346 | GCC: 1.358 | Acc: 50.0%
+[Epoch:009] [100/400] | Loss: 2.882 | Ce: 3.121 | Entropy: 0.584 | GCC: 1.318 | Acc: 43.2%
+[Epoch:009] [200/400] | Loss: 2.821 | Ce: 2.981 | Entropy: 0.566 | GCC: 1.317 | Acc: 47.1%
+[Epoch:009] [300/400] | Loss: 2.776 | Ce: 2.893 | Entropy: 0.549 | GCC: 1.305 | Acc: 49.3%
+[Epoch:009] [400/400] | Loss: 2.757 | Ce: 2.838 | Entropy: 0.537 | GCC: 1.306 | Acc: 51.0%
+extracting......Extract Features: [1/302]	Time 4.123 (4.123)	Data 4.018 (4.018)	**Extract Features: [100/302]	Time 0.096 (0.337)	Data 0.000 (0.239)	**Extract Features: [200/302]	Time 0.096 (0.393)	Data 0.000 (0.295)	**Extract Features: [300/302]	Time 0.094 (0.302)	Data 0.000 (0.205)	**extracting done     
+Mean AP: 13.1%
+
+ * Finished epoch   9  model no.1 mAP: 13.1% best: 13.1% *
+2022-05-13 17:40:28.567800
+Cost 0:58:15.006391
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.374 (1.374)	Data 1.279 (1.279)	**Extract Features: [100/203]	Time 0.095 (0.107)	Data 0.000 (0.013)	**Extract Features: [200/203]	Time 0.094 (0.101)	Data 0.000 (0.007)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:010] [001/400] | Loss: 2.964 | Ce: 3.530 | Entropy: 0.484 | GCC: 1.089 | Acc: 31.2%
+[Epoch:010] [100/400] | Loss: 2.830 | Ce: 3.004 | Entropy: 0.562 | GCC: 1.302 | Acc: 45.5%
+[Epoch:010] [200/400] | Loss: 2.774 | Ce: 2.880 | Entropy: 0.541 | GCC: 1.307 | Acc: 49.7%
+[Epoch:010] [300/400] | Loss: 2.747 | Ce: 2.807 | Entropy: 0.524 | GCC: 1.303 | Acc: 51.7%
+[Epoch:010] [400/400] | Loss: 2.731 | Ce: 2.769 | Entropy: 0.513 | GCC: 1.299 | Acc: 53.0%
+extracting......Extract Features: [1/302]	Time 1.597 (1.597)	Data 1.500 (1.500)	**Extract Features: [100/302]	Time 0.095 (0.110)	Data 0.000 (0.015)	**Extract Features: [200/302]	Time 0.094 (0.103)	Data 0.000 (0.008)	**Extract Features: [300/302]	Time 0.095 (0.100)	Data 0.000 (0.005)	**extracting done     
+Mean AP: 14.6%
+
+ * Finished epoch  10  model no.1 mAP: 14.6% best: 14.6% *
+2022-05-13 17:46:13.140309
+Cost 1:03:59.578898
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.206 (1.206)	Data 1.109 (1.109)	**Extract Features: [100/203]	Time 0.121 (0.112)	Data 0.000 (0.012)	**Extract Features: [200/203]	Time 0.095 (0.109)	Data 0.000 (0.007)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:011] [001/400] | Loss: 2.685 | Ce: 2.975 | Entropy: 0.351 | GCC: 1.336 | Acc: 59.4%
+[Epoch:011] [100/400] | Loss: 2.761 | Ce: 2.945 | Entropy: 0.519 | GCC: 1.273 | Acc: 47.2%
+[Epoch:011] [200/400] | Loss: 2.702 | Ce: 2.823 | Entropy: 0.515 | GCC: 1.246 | Acc: 50.9%
+[Epoch:011] [300/400] | Loss: 2.691 | Ce: 2.770 | Entropy: 0.505 | GCC: 1.246 | Acc: 52.6%
+[Epoch:011] [400/400] | Loss: 2.675 | Ce: 2.726 | Entropy: 0.489 | GCC: 1.248 | Acc: 53.8%
+extracting......Extract Features: [1/302]	Time 1.552 (1.552)	Data 1.457 (1.457)	**Extract Features: [100/302]	Time 0.095 (0.111)	Data 0.000 (0.015)	**Extract Features: [200/302]	Time 0.096 (0.103)	Data 0.000 (0.008)	**Extract Features: [300/302]	Time 0.094 (0.100)	Data 0.000 (0.005)	**extracting done     
+Mean AP: 15.7%
+
+ * Finished epoch  11  model no.1 mAP: 15.7% best: 15.7% *
+2022-05-13 17:51:55.657452
+Cost 1:09:42.096053
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 2.125 (2.125)	Data 2.028 (2.028)	**Extract Features: [100/203]	Time 0.097 (0.115)	Data 0.000 (0.021)	**Extract Features: [200/203]	Time 0.095 (0.105)	Data 0.000 (0.010)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:012] [001/400] | Loss: 2.741 | Ce: 3.040 | Entropy: 0.280 | GCC: 1.312 | Acc: 50.0%
+[Epoch:012] [100/400] | Loss: 3.021 | Ce: 3.292 | Entropy: 0.557 | GCC: 1.244 | Acc: 40.1%
+[Epoch:012] [200/400] | Loss: 2.940 | Ce: 3.110 | Entropy: 0.534 | GCC: 1.238 | Acc: 44.4%
+[Epoch:012] [300/400] | Loss: 2.884 | Ce: 3.003 | Entropy: 0.511 | GCC: 1.226 | Acc: 47.6%
+[Epoch:012] [400/400] | Loss: 2.841 | Ce: 2.924 | Entropy: 0.497 | GCC: 1.217 | Acc: 49.8%
+extracting......Extract Features: [1/302]	Time 1.494 (1.494)	Data 1.398 (1.398)	**Extract Features: [100/302]	Time 0.096 (0.110)	Data 0.000 (0.014)	**Extract Features: [200/302]	Time 0.095 (0.103)	Data 0.000 (0.007)	**Extract Features: [300/302]	Time 0.094 (0.100)	Data 0.000 (0.005)	**extracting done     
+Mean AP: 16.3%
+
+ * Finished epoch  12  model no.1 mAP: 16.3% best: 16.3% *
+2022-05-13 17:57:05.640329
+Cost 1:14:52.078918
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.233 (1.233)	Data 1.136 (1.136)	**Extract Features: [100/203]	Time 0.096 (0.107)	Data 0.000 (0.012)	**Extract Features: [200/203]	Time 0.230 (0.108)	Data 0.131 (0.011)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:013] [001/400] | Loss: 2.529 | Ce: 2.514 | Entropy: 0.282 | GCC: 1.303 | Acc: 59.4%
+[Epoch:013] [100/400] | Loss: 2.723 | Ce: 2.900 | Entropy: 0.500 | GCC: 1.190 | Acc: 47.3%
+[Epoch:013] [200/400] | Loss: 2.673 | Ce: 2.793 | Entropy: 0.486 | GCC: 1.175 | Acc: 50.5%
+[Epoch:013] [300/400] | Loss: 2.635 | Ce: 2.715 | Entropy: 0.467 | GCC: 1.169 | Acc: 53.0%
+[Epoch:013] [400/400] | Loss: 2.610 | Ce: 2.657 | Entropy: 0.454 | GCC: 1.167 | Acc: 55.1%
+extracting......Extract Features: [1/302]	Time 1.494 (1.494)	Data 1.398 (1.398)	**Extract Features: [100/302]	Time 0.094 (0.110)	Data 0.000 (0.014)	**Extract Features: [200/302]	Time 0.094 (0.102)	Data 0.000 (0.007)	**Extract Features: [300/302]	Time 0.094 (0.100)	Data 0.000 (0.005)	**extracting done     
+Mean AP: 17.9%
+
+ * Finished epoch  13  model no.1 mAP: 17.9% best: 17.9% *
+2022-05-13 18:02:33.065728
+Cost 1:20:19.504314
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.125 (1.125)	Data 1.029 (1.029)	**Extract Features: [100/203]	Time 0.095 (0.105)	Data 0.000 (0.010)	**Extract Features: [200/203]	Time 0.095 (0.100)	Data 0.000 (0.005)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:014] [001/400] | Loss: 2.735 | Ce: 2.790 | Entropy: 0.353 | GCC: 1.054 | Acc: 54.7%
+[Epoch:014] [100/400] | Loss: 2.843 | Ce: 3.063 | Entropy: 0.495 | GCC: 1.173 | Acc: 45.0%
+[Epoch:014] [200/400] | Loss: 2.850 | Ce: 3.011 | Entropy: 0.485 | GCC: 1.169 | Acc: 46.7%
+[Epoch:014] [300/400] | Loss: 2.831 | Ce: 2.943 | Entropy: 0.476 | GCC: 1.167 | Acc: 48.9%
+[Epoch:014] [400/400] | Loss: 2.804 | Ce: 2.864 | Entropy: 0.464 | GCC: 1.172 | Acc: 51.3%
+extracting......Extract Features: [1/302]	Time 1.343 (1.343)	Data 1.247 (1.247)	**Extract Features: [100/302]	Time 0.095 (0.108)	Data 0.000 (0.013)	**Extract Features: [200/302]	Time 0.094 (0.101)	Data 0.000 (0.006)	**Extract Features: [300/302]	Time 0.094 (0.099)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 18.8%
+
+ * Finished epoch  14  model no.1 mAP: 18.8% best: 18.8% *
+2022-05-13 18:07:40.680846
+Cost 1:25:27.119435
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.346 (1.346)	Data 1.249 (1.249)	**Extract Features: [100/203]	Time 0.100 (0.108)	Data 0.000 (0.013)	**Extract Features: [200/203]	Time 0.095 (0.101)	Data 0.000 (0.007)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:015] [001/400] | Loss: 2.457 | Ce: 2.477 | Entropy: 0.234 | GCC: 1.221 | Acc: 57.8%
+[Epoch:015] [100/400] | Loss: 2.639 | Ce: 2.782 | Entropy: 0.464 | GCC: 1.147 | Acc: 51.3%
+[Epoch:015] [200/400] | Loss: 2.617 | Ce: 2.714 | Entropy: 0.450 | GCC: 1.135 | Acc: 53.4%
+[Epoch:015] [300/400] | Loss: 2.579 | Ce: 2.641 | Entropy: 0.430 | GCC: 1.127 | Acc: 55.7%
+[Epoch:015] [400/400] | Loss: 2.560 | Ce: 2.598 | Entropy: 0.417 | GCC: 1.122 | Acc: 57.0%
+extracting......Extract Features: [1/302]	Time 1.282 (1.282)	Data 1.187 (1.187)	**Extract Features: [100/302]	Time 0.094 (0.107)	Data 0.000 (0.012)	**Extract Features: [200/302]	Time 0.094 (0.101)	Data 0.000 (0.006)	**Extract Features: [300/302]	Time 0.096 (0.099)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 19.6%
+
+ * Finished epoch  15  model no.1 mAP: 19.6% best: 19.6% *
+2022-05-13 18:13:18.710440
+Cost 1:31:05.149033
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.376 (1.376)	Data 1.281 (1.281)	**Extract Features: [100/203]	Time 0.094 (0.108)	Data 0.000 (0.013)	**Extract Features: [200/203]	Time 0.094 (0.101)	Data 0.000 (0.007)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:016] [001/400] | Loss: 2.322 | Ce: 2.366 | Entropy: 0.201 | GCC: 1.105 | Acc: 67.2%
+[Epoch:016] [100/400] | Loss: 2.613 | Ce: 2.743 | Entropy: 0.443 | GCC: 1.114 | Acc: 51.2%
+[Epoch:016] [200/400] | Loss: 2.579 | Ce: 2.665 | Entropy: 0.434 | GCC: 1.105 | Acc: 53.9%
+[Epoch:016] [300/400] | Loss: 2.551 | Ce: 2.590 | Entropy: 0.415 | GCC: 1.112 | Acc: 56.3%
+[Epoch:016] [400/400] | Loss: 2.528 | Ce: 2.538 | Entropy: 0.402 | GCC: 1.113 | Acc: 58.1%
+extracting......Extract Features: [1/302]	Time 1.383 (1.383)	Data 1.287 (1.287)	**Extract Features: [100/302]	Time 0.094 (0.109)	Data 0.000 (0.013)	**Extract Features: [200/302]	Time 0.094 (0.102)	Data 0.000 (0.007)	**Extract Features: [300/302]	Time 0.094 (0.099)	Data 0.000 (0.005)	**extracting done     
+Mean AP: 20.4%
+
+ * Finished epoch  16  model no.1 mAP: 20.4% best: 20.4% *
+2022-05-13 18:19:06.333037
+Cost 1:36:52.771627
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.207 (1.207)	Data 1.110 (1.110)	**Extract Features: [100/203]	Time 0.095 (0.106)	Data 0.000 (0.011)	**Extract Features: [200/203]	Time 0.094 (0.101)	Data 0.000 (0.006)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:017] [001/400] | Loss: 2.652 | Ce: 2.884 | Entropy: 0.290 | GCC: 0.909 | Acc: 45.3%
+[Epoch:017] [100/400] | Loss: 2.589 | Ce: 2.696 | Entropy: 0.435 | GCC: 1.096 | Acc: 53.0%
+[Epoch:017] [200/400] | Loss: 2.566 | Ce: 2.647 | Entropy: 0.424 | GCC: 1.083 | Acc: 55.1%
+[Epoch:017] [300/400] | Loss: 2.530 | Ce: 2.581 | Entropy: 0.408 | GCC: 1.074 | Acc: 57.3%
+[Epoch:017] [400/400] | Loss: 2.520 | Ce: 2.550 | Entropy: 0.395 | GCC: 1.072 | Acc: 58.3%
+extracting......Extract Features: [1/302]	Time 1.486 (1.486)	Data 1.389 (1.389)	**Extract Features: [100/302]	Time 0.096 (0.110)	Data 0.000 (0.014)	**Extract Features: [200/302]	Time 0.096 (0.103)	Data 0.000 (0.007)	**Extract Features: [300/302]	Time 0.096 (0.100)	Data 0.000 (0.005)	**extracting done     
+Mean AP: 22.1%
+
+ * Finished epoch  17  model no.1 mAP: 22.1% best: 22.1% *
+2022-05-13 18:24:25.335175
+Cost 1:42:11.773772
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.446 (1.446)	Data 1.350 (1.350)	**Extract Features: [100/203]	Time 0.098 (0.112)	Data 0.001 (0.014)	**Extract Features: [200/203]	Time 0.096 (0.110)	Data 0.000 (0.010)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:018] [001/400] | Loss: 2.331 | Ce: 2.362 | Entropy: 0.300 | GCC: 0.975 | Acc: 67.2%
+[Epoch:018] [100/400] | Loss: 2.580 | Ce: 2.735 | Entropy: 0.422 | GCC: 1.025 | Acc: 51.7%
+[Epoch:018] [200/400] | Loss: 2.565 | Ce: 2.653 | Entropy: 0.414 | GCC: 1.039 | Acc: 54.8%
+[Epoch:018] [300/400] | Loss: 2.536 | Ce: 2.587 | Entropy: 0.398 | GCC: 1.050 | Acc: 56.8%
+[Epoch:018] [400/400] | Loss: 2.524 | Ce: 2.551 | Entropy: 0.389 | GCC: 1.045 | Acc: 58.1%
+extracting......Extract Features: [1/302]	Time 1.395 (1.395)	Data 1.299 (1.299)	**Extract Features: [100/302]	Time 0.095 (0.109)	Data 0.000 (0.013)	**Extract Features: [200/302]	Time 0.095 (0.102)	Data 0.000 (0.007)	**Extract Features: [300/302]	Time 0.096 (0.100)	Data 0.000 (0.005)	**extracting done     
+Mean AP: 23.8%
+
+ * Finished epoch  18  model no.1 mAP: 23.8% best: 23.8% *
+2022-05-13 18:29:52.496541
+Cost 1:47:38.935128
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.264 (1.264)	Data 1.168 (1.168)	**Extract Features: [100/203]	Time 0.095 (0.107)	Data 0.000 (0.012)	**Extract Features: [200/203]	Time 0.094 (0.101)	Data 0.000 (0.006)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:019] [001/400] | Loss: 2.699 | Ce: 2.646 | Entropy: 0.328 | GCC: 1.222 | Acc: 51.6%
+[Epoch:019] [100/400] | Loss: 2.498 | Ce: 2.598 | Entropy: 0.414 | GCC: 1.062 | Acc: 56.6%
+[Epoch:019] [200/400] | Loss: 2.513 | Ce: 2.584 | Entropy: 0.414 | GCC: 1.059 | Acc: 56.7%
+[Epoch:019] [300/400] | Loss: 2.479 | Ce: 2.523 | Entropy: 0.396 | GCC: 1.042 | Acc: 58.9%
+[Epoch:019] [400/400] | Loss: 2.460 | Ce: 2.483 | Entropy: 0.385 | GCC: 1.036 | Acc: 60.2%
+extracting......Extract Features: [1/302]	Time 2.916 (2.916)	Data 2.818 (2.818)	**Extract Features: [100/302]	Time 0.314 (0.157)	Data 0.000 (0.057)	**Extract Features: [200/302]	Time 0.110 (0.140)	Data 0.011 (0.039)	**Extract Features: [300/302]	Time 0.094 (0.126)	Data 0.000 (0.026)	**extracting done     
+Mean AP: 25.0%
+
+ * Finished epoch  19  model no.1 mAP: 25.0% best: 25.0% *
+2022-05-13 18:36:40.948832
+Cost 1:54:27.387452
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.469 (1.469)	Data 1.372 (1.372)	**Extract Features: [100/203]	Time 0.094 (0.108)	Data 0.000 (0.014)	**Extract Features: [200/203]	Time 0.093 (0.101)	Data 0.000 (0.007)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:020] [001/400] | Loss: 2.306 | Ce: 2.050 | Entropy: 0.229 | GCC: 1.223 | Acc: 71.9%
+[Epoch:020] [100/400] | Loss: 2.514 | Ce: 2.674 | Entropy: 0.403 | GCC: 1.004 | Acc: 54.6%
+[Epoch:020] [200/400] | Loss: 2.475 | Ce: 2.572 | Entropy: 0.397 | GCC: 1.008 | Acc: 58.1%
+[Epoch:020] [300/400] | Loss: 2.455 | Ce: 2.509 | Entropy: 0.383 | GCC: 1.014 | Acc: 59.9%
+[Epoch:020] [400/400] | Loss: 2.431 | Ce: 2.456 | Entropy: 0.373 | GCC: 1.008 | Acc: 61.4%
+extracting......Extract Features: [1/302]	Time 3.615 (3.615)	Data 3.518 (3.518)	**Extract Features: [100/302]	Time 0.098 (0.136)	Data 0.000 (0.040)	**Extract Features: [200/302]	Time 0.095 (0.116)	Data 0.000 (0.020)	**Extract Features: [300/302]	Time 0.094 (0.109)	Data 0.000 (0.013)	**extracting done     
+Mean AP: 26.8%
+
+ * Finished epoch  20  model no.1 mAP: 26.8% best: 26.8% *
+2022-05-13 18:42:16.744864
+Cost 2:00:03.183457
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.106 (1.106)	Data 1.010 (1.010)	**Extract Features: [100/203]	Time 0.096 (0.110)	Data 0.000 (0.011)	**Extract Features: [200/203]	Time 0.096 (0.108)	Data 0.000 (0.006)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:021] [001/400] | Loss: 2.458 | Ce: 2.939 | Entropy: 0.237 | GCC: 0.711 | Acc: 54.7%
+[Epoch:021] [100/400] | Loss: 2.431 | Ce: 2.539 | Entropy: 0.392 | GCC: 0.994 | Acc: 57.6%
+[Epoch:021] [200/400] | Loss: 2.423 | Ce: 2.488 | Entropy: 0.390 | GCC: 1.008 | Acc: 59.7%
+[Epoch:021] [300/400] | Loss: 2.399 | Ce: 2.424 | Entropy: 0.374 | GCC: 1.016 | Acc: 61.6%
+[Epoch:021] [400/400] | Loss: 2.387 | Ce: 2.390 | Entropy: 0.364 | GCC: 1.014 | Acc: 62.8%
+extracting......Extract Features: [1/302]	Time 4.500 (4.500)	Data 4.397 (4.397)	**Extract Features: [100/302]	Time 0.097 (0.160)	Data 0.000 (0.053)	**Extract Features: [200/302]	Time 0.096 (0.142)	Data 0.000 (0.038)	**Extract Features: [300/302]	Time 0.106 (0.136)	Data 0.000 (0.033)	**extracting done     
+Mean AP: 28.7%
+
+ * Finished epoch  21  model no.1 mAP: 28.7% best: 28.7% *
+2022-05-13 18:47:30.994768
+Cost 2:05:17.433359
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.018 (1.018)	Data 0.923 (0.923)	**Extract Features: [100/203]	Time 0.097 (0.105)	Data 0.000 (0.010)	**Extract Features: [200/203]	Time 0.094 (0.100)	Data 0.000 (0.005)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:022] [001/400] | Loss: 2.450 | Ce: 2.413 | Entropy: 0.217 | GCC: 1.250 | Acc: 56.2%
+[Epoch:022] [100/400] | Loss: 2.425 | Ce: 2.533 | Entropy: 0.385 | GCC: 1.002 | Acc: 58.3%
+[Epoch:022] [200/400] | Loss: 2.389 | Ce: 2.454 | Entropy: 0.378 | GCC: 1.007 | Acc: 60.9%
+[Epoch:022] [300/400] | Loss: 2.390 | Ce: 2.429 | Entropy: 0.368 | GCC: 0.994 | Acc: 61.8%
+[Epoch:022] [400/400] | Loss: 2.373 | Ce: 2.390 | Entropy: 0.359 | GCC: 0.990 | Acc: 63.1%
+extracting......Extract Features: [1/302]	Time 4.193 (4.193)	Data 4.081 (4.081)	**Extract Features: [100/302]	Time 0.100 (0.176)	Data 0.000 (0.072)	**Extract Features: [200/302]	Time 0.128 (0.150)	Data 0.000 (0.046)	**Extract Features: [300/302]	Time 0.096 (0.134)	Data 0.000 (0.031)	**extracting done     
+Mean AP: 29.7%
+
+ * Finished epoch  22  model no.1 mAP: 29.7% best: 29.7% *
+2022-05-13 18:53:14.203479
+Cost 2:11:00.642066
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.012 (1.012)	Data 0.912 (0.912)	**Extract Features: [100/203]	Time 0.094 (0.104)	Data 0.000 (0.009)	**Extract Features: [200/203]	Time 0.095 (0.102)	Data 0.000 (0.005)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:023] [001/400] | Loss: 2.651 | Ce: 2.828 | Entropy: 0.320 | GCC: 0.656 | Acc: 48.4%
+[Epoch:023] [100/400] | Loss: 2.387 | Ce: 2.502 | Entropy: 0.375 | GCC: 0.997 | Acc: 59.7%
+[Epoch:023] [200/400] | Loss: 2.350 | Ce: 2.416 | Entropy: 0.372 | GCC: 0.983 | Acc: 62.1%
+[Epoch:023] [300/400] | Loss: 2.342 | Ce: 2.377 | Entropy: 0.360 | GCC: 0.984 | Acc: 63.2%
+[Epoch:023] [400/400] | Loss: 2.325 | Ce: 2.331 | Entropy: 0.351 | GCC: 0.986 | Acc: 64.9%
+extracting......Extract Features: [1/302]	Time 2.786 (2.786)	Data 2.684 (2.684)	**Extract Features: [100/302]	Time 0.114 (0.139)	Data 0.001 (0.035)	**Extract Features: [200/302]	Time 0.167 (0.125)	Data 0.000 (0.021)	**Extract Features: [300/302]	Time 0.096 (0.121)	Data 0.000 (0.018)	**extracting done     
+Mean AP: 30.1%
+
+ * Finished epoch  23  model no.1 mAP: 30.1% best: 30.1% *
+2022-05-13 18:58:12.789889
+Cost 2:15:59.228478
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.149 (1.149)	Data 1.051 (1.051)	**Extract Features: [100/203]	Time 0.094 (0.105)	Data 0.000 (0.011)	**Extract Features: [200/203]	Time 0.094 (0.100)	Data 0.000 (0.005)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:024] [001/400] | Loss: 2.223 | Ce: 2.240 | Entropy: 0.222 | GCC: 0.988 | Acc: 67.2%
+[Epoch:024] [100/400] | Loss: 2.693 | Ce: 2.903 | Entropy: 0.411 | GCC: 0.982 | Acc: 48.1%
+[Epoch:024] [200/400] | Loss: 2.662 | Ce: 2.807 | Entropy: 0.405 | GCC: 0.985 | Acc: 51.4%
+[Epoch:024] [300/400] | Loss: 2.629 | Ce: 2.737 | Entropy: 0.391 | GCC: 0.971 | Acc: 53.4%
+[Epoch:024] [400/400] | Loss: 2.617 | Ce: 2.683 | Entropy: 0.387 | GCC: 0.973 | Acc: 55.2%
+extracting......Extract Features: [1/302]	Time 3.333 (3.333)	Data 3.232 (3.232)	**Extract Features: [100/302]	Time 0.099 (0.149)	Data 0.000 (0.051)	**Extract Features: [200/302]	Time 0.111 (0.128)	Data 0.016 (0.026)	**Extract Features: [300/302]	Time 0.094 (0.119)	Data 0.000 (0.018)	**extracting done     
+Mean AP: 31.4%
+
+ * Finished epoch  24  model no.1 mAP: 31.4% best: 31.4% *
+2022-05-13 19:03:45.801395
+Cost 2:21:32.239998
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.085 (1.085)	Data 0.988 (0.988)	**Extract Features: [100/203]	Time 0.096 (0.108)	Data 0.000 (0.011)	**Extract Features: [200/203]	Time 0.096 (0.105)	Data 0.000 (0.006)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:025] [001/400] | Loss: 2.083 | Ce: 2.102 | Entropy: 0.125 | GCC: 1.153 | Acc: 71.9%
+[Epoch:025] [100/400] | Loss: 2.342 | Ce: 2.466 | Entropy: 0.378 | GCC: 0.946 | Acc: 59.8%
+[Epoch:025] [200/400] | Loss: 2.349 | Ce: 2.445 | Entropy: 0.377 | GCC: 0.933 | Acc: 60.9%
+[Epoch:025] [300/400] | Loss: 2.333 | Ce: 2.390 | Entropy: 0.363 | GCC: 0.940 | Acc: 63.1%
+[Epoch:025] [400/400] | Loss: 2.322 | Ce: 2.359 | Entropy: 0.353 | GCC: 0.933 | Acc: 64.1%
+extracting......Extract Features: [1/302]	Time 2.708 (2.708)	Data 2.610 (2.610)	**Extract Features: [100/302]	Time 0.098 (0.135)	Data 0.000 (0.034)	**Extract Features: [200/302]	Time 0.096 (0.127)	Data 0.000 (0.025)	**Extract Features: [300/302]	Time 0.096 (0.122)	Data 0.000 (0.022)	**extracting done     
+Mean AP: 33.2%
+
+ * Finished epoch  25  model no.1 mAP: 33.2% best: 33.2% *
+2022-05-13 19:08:39.292193
+Cost 2:26:25.730801
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 2.316 (2.316)	Data 2.218 (2.218)	**Extract Features: [100/203]	Time 0.095 (0.121)	Data 0.000 (0.023)	**Extract Features: [200/203]	Time 0.094 (0.108)	Data 0.000 (0.011)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:026] [001/400] | Loss: 2.363 | Ce: 2.565 | Entropy: 0.246 | GCC: 0.809 | Acc: 62.5%
+[Epoch:026] [100/400] | Loss: 2.331 | Ce: 2.452 | Entropy: 0.379 | GCC: 0.935 | Acc: 60.2%
+[Epoch:026] [200/400] | Loss: 2.289 | Ce: 2.375 | Entropy: 0.370 | GCC: 0.925 | Acc: 63.0%
+[Epoch:026] [300/400] | Loss: 2.292 | Ce: 2.350 | Entropy: 0.362 | GCC: 0.920 | Acc: 64.0%
+[Epoch:026] [400/400] | Loss: 2.287 | Ce: 2.326 | Entropy: 0.356 | GCC: 0.916 | Acc: 64.9%
+extracting......Extract Features: [1/302]	Time 3.199 (3.199)	Data 3.101 (3.101)	**Extract Features: [100/302]	Time 0.097 (0.134)	Data 0.000 (0.034)	**Extract Features: [200/302]	Time 0.110 (0.120)	Data 0.006 (0.017)	**Extract Features: [300/302]	Time 0.096 (0.115)	Data 0.000 (0.012)	**extracting done     
+Mean AP: 34.0%
+
+ * Finished epoch  26  model no.1 mAP: 34.0% best: 34.0% *
+2022-05-13 19:14:15.234467
+Cost 2:32:01.673068
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 2.506 (2.506)	Data 2.391 (2.391)	**Extract Features: [100/203]	Time 0.112 (0.130)	Data 0.002 (0.026)	**Extract Features: [200/203]	Time 0.096 (0.116)	Data 0.000 (0.014)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:027] [001/400] | Loss: 2.311 | Ce: 2.289 | Entropy: 0.233 | GCC: 0.908 | Acc: 64.1%
+[Epoch:027] [100/400] | Loss: 2.330 | Ce: 2.474 | Entropy: 0.375 | GCC: 0.915 | Acc: 60.1%
+[Epoch:027] [200/400] | Loss: 2.294 | Ce: 2.395 | Entropy: 0.363 | GCC: 0.913 | Acc: 63.1%
+[Epoch:027] [300/400] | Loss: 2.272 | Ce: 2.334 | Entropy: 0.350 | GCC: 0.916 | Acc: 64.7%
+[Epoch:027] [400/400] | Loss: 2.268 | Ce: 2.304 | Entropy: 0.343 | GCC: 0.921 | Acc: 65.9%
+extracting......Extract Features: [1/302]	Time 1.231 (1.231)	Data 1.135 (1.135)	**Extract Features: [100/302]	Time 0.097 (0.106)	Data 0.000 (0.012)	**Extract Features: [200/302]	Time 0.094 (0.101)	Data 0.000 (0.006)	**Extract Features: [300/302]	Time 0.096 (0.100)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 35.2%
+
+ * Finished epoch  27  model no.1 mAP: 35.2% best: 35.2% *
+2022-05-13 19:19:14.272675
+Cost 2:37:00.711276
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 2.647 (2.647)	Data 2.549 (2.549)	**Extract Features: [100/203]	Time 0.101 (0.132)	Data 0.000 (0.027)	**Extract Features: [200/203]	Time 0.097 (0.117)	Data 0.000 (0.014)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:028] [001/400] | Loss: 2.447 | Ce: 2.698 | Entropy: 0.306 | GCC: 0.732 | Acc: 56.2%
+[Epoch:028] [100/400] | Loss: 2.273 | Ce: 2.424 | Entropy: 0.366 | GCC: 0.892 | Acc: 62.3%
+[Epoch:028] [200/400] | Loss: 2.249 | Ce: 2.343 | Entropy: 0.357 | GCC: 0.913 | Acc: 64.7%
+[Epoch:028] [300/400] | Loss: 2.230 | Ce: 2.304 | Entropy: 0.347 | GCC: 0.896 | Acc: 66.0%
+[Epoch:028] [400/400] | Loss: 2.222 | Ce: 2.273 | Entropy: 0.339 | GCC: 0.894 | Acc: 67.1%
+extracting......Extract Features: [1/302]	Time 1.327 (1.327)	Data 1.230 (1.230)	**Extract Features: [100/302]	Time 0.094 (0.107)	Data 0.000 (0.013)	**Extract Features: [200/302]	Time 0.124 (0.105)	Data 0.001 (0.007)	**Extract Features: [300/302]	Time 0.096 (0.104)	Data 0.000 (0.005)	**extracting done     
+Mean AP: 37.1%
+
+ * Finished epoch  28  model no.1 mAP: 37.1% best: 37.1% *
+2022-05-13 19:24:27.861853
+Cost 2:42:14.300457
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 2.039 (2.039)	Data 1.932 (1.932)	**Extract Features: [100/203]	Time 0.101 (0.128)	Data 0.000 (0.022)	**Extract Features: [200/203]	Time 0.109 (0.118)	Data 0.000 (0.012)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:029] [001/400] | Loss: 2.088 | Ce: 2.130 | Entropy: 0.183 | GCC: 0.934 | Acc: 79.7%
+[Epoch:029] [100/400] | Loss: 2.218 | Ce: 2.338 | Entropy: 0.364 | GCC: 0.908 | Acc: 64.0%
+[Epoch:029] [200/400] | Loss: 2.198 | Ce: 2.284 | Entropy: 0.352 | GCC: 0.896 | Acc: 66.1%
+[Epoch:029] [300/400] | Loss: 2.197 | Ce: 2.263 | Entropy: 0.339 | GCC: 0.889 | Acc: 66.8%
+[Epoch:029] [400/400] | Loss: 2.191 | Ce: 2.240 | Entropy: 0.332 | GCC: 0.887 | Acc: 67.6%
+extracting......Extract Features: [1/302]	Time 2.167 (2.167)	Data 2.072 (2.072)	**Extract Features: [100/302]	Time 0.101 (0.120)	Data 0.005 (0.021)	**Extract Features: [200/302]	Time 0.111 (0.109)	Data 0.001 (0.011)	**Extract Features: [300/302]	Time 0.095 (0.106)	Data 0.000 (0.008)	**extracting done     
+Mean AP: 38.0%
+
+ * Finished epoch  29  model no.1 mAP: 38.0% best: 38.0% *
+2022-05-13 19:29:51.837962
+Cost 2:47:38.276599
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 2.861 (2.861)	Data 2.760 (2.760)	**Extract Features: [100/203]	Time 0.106 (0.133)	Data 0.000 (0.029)	**Extract Features: [200/203]	Time 0.099 (0.118)	Data 0.000 (0.015)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:030] [001/400] | Loss: 1.829 | Ce: 1.895 | Entropy: 0.177 | GCC: 0.917 | Acc: 84.4%
+[Epoch:030] [100/400] | Loss: 2.208 | Ce: 2.341 | Entropy: 0.361 | GCC: 0.884 | Acc: 65.3%
+[Epoch:030] [200/400] | Loss: 2.190 | Ce: 2.288 | Entropy: 0.359 | GCC: 0.878 | Acc: 66.2%
+[Epoch:030] [300/400] | Loss: 2.168 | Ce: 2.232 | Entropy: 0.345 | GCC: 0.892 | Acc: 67.8%
+[Epoch:030] [400/400] | Loss: 2.161 | Ce: 2.204 | Entropy: 0.337 | GCC: 0.888 | Acc: 68.7%
+extracting......Extract Features: [1/302]	Time 1.427 (1.427)	Data 1.331 (1.331)	**Extract Features: [100/302]	Time 0.096 (0.108)	Data 0.000 (0.014)	**Extract Features: [200/302]	Time 0.094 (0.101)	Data 0.000 (0.007)	**Extract Features: [300/302]	Time 0.096 (0.099)	Data 0.000 (0.005)	**extracting done     
+Mean AP: 39.3%
+
+ * Finished epoch  30  model no.1 mAP: 39.3% best: 39.3% *
+2022-05-13 19:35:34.919893
+Cost 2:53:21.358491
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.120 (1.120)	Data 1.022 (1.022)	**Extract Features: [100/203]	Time 0.101 (0.114)	Data 0.001 (0.011)	**Extract Features: [200/203]	Time 0.106 (0.108)	Data 0.000 (0.006)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:031] [001/400] | Loss: 1.818 | Ce: 1.839 | Entropy: 0.118 | GCC: 1.084 | Acc: 85.9%
+[Epoch:031] [100/400] | Loss: 2.231 | Ce: 2.371 | Entropy: 0.366 | GCC: 0.884 | Acc: 63.2%
+[Epoch:031] [200/400] | Loss: 2.201 | Ce: 2.299 | Entropy: 0.360 | GCC: 0.875 | Acc: 65.8%
+[Epoch:031] [300/400] | Loss: 2.186 | Ce: 2.263 | Entropy: 0.348 | GCC: 0.867 | Acc: 67.2%
+[Epoch:031] [400/400] | Loss: 2.173 | Ce: 2.231 | Entropy: 0.337 | GCC: 0.861 | Acc: 68.2%
+extracting......Extract Features: [1/302]	Time 1.234 (1.234)	Data 1.138 (1.138)	**Extract Features: [100/302]	Time 0.094 (0.106)	Data 0.000 (0.012)	**Extract Features: [200/302]	Time 0.095 (0.101)	Data 0.000 (0.006)	**Extract Features: [300/302]	Time 0.094 (0.099)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 41.2%
+
+ * Finished epoch  31  model no.1 mAP: 41.2% best: 41.2% *
+2022-05-13 19:40:49.555996
+Cost 2:58:35.994586
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.207 (1.207)	Data 1.110 (1.110)	**Extract Features: [100/203]	Time 0.095 (0.106)	Data 0.000 (0.011)	**Extract Features: [200/203]	Time 0.097 (0.101)	Data 0.000 (0.006)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:032] [001/400] | Loss: 2.154 | Ce: 2.071 | Entropy: 0.213 | GCC: 1.149 | Acc: 73.4%
+[Epoch:032] [100/400] | Loss: 2.193 | Ce: 2.319 | Entropy: 0.356 | GCC: 0.902 | Acc: 64.8%
+[Epoch:032] [200/400] | Loss: 2.153 | Ce: 2.261 | Entropy: 0.358 | GCC: 0.868 | Acc: 66.8%
+[Epoch:032] [300/400] | Loss: 2.134 | Ce: 2.210 | Entropy: 0.343 | GCC: 0.872 | Acc: 68.2%
+[Epoch:032] [400/400] | Loss: 2.135 | Ce: 2.178 | Entropy: 0.335 | GCC: 0.889 | Acc: 69.4%
+extracting......Extract Features: [1/302]	Time 1.176 (1.176)	Data 1.072 (1.072)	**Extract Features: [100/302]	Time 0.094 (0.106)	Data 0.000 (0.011)	**Extract Features: [200/302]	Time 0.094 (0.100)	Data 0.000 (0.006)	**Extract Features: [300/302]	Time 0.094 (0.099)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 41.6%
+
+ * Finished epoch  32  model no.1 mAP: 41.6% best: 41.6% *
+2022-05-13 19:46:15.954484
+Cost 3:04:02.393128
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 2.627 (2.627)	Data 2.525 (2.525)	**Extract Features: [100/203]	Time 0.115 (0.127)	Data 0.000 (0.026)	**Extract Features: [200/203]	Time 0.101 (0.115)	Data 0.000 (0.014)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:033] [001/400] | Loss: 2.110 | Ce: 2.192 | Entropy: 0.227 | GCC: 1.023 | Acc: 70.3%
+[Epoch:033] [100/400] | Loss: 2.151 | Ce: 2.295 | Entropy: 0.350 | GCC: 0.851 | Acc: 64.4%
+[Epoch:033] [200/400] | Loss: 2.142 | Ce: 2.270 | Entropy: 0.354 | GCC: 0.823 | Acc: 65.9%
+[Epoch:033] [300/400] | Loss: 2.124 | Ce: 2.220 | Entropy: 0.338 | GCC: 0.829 | Acc: 67.8%
+[Epoch:033] [400/400] | Loss: 2.115 | Ce: 2.184 | Entropy: 0.330 | GCC: 0.832 | Acc: 69.2%
+extracting......Extract Features: [1/302]	Time 1.264 (1.264)	Data 1.168 (1.168)	**Extract Features: [100/302]	Time 0.095 (0.107)	Data 0.000 (0.012)	**Extract Features: [200/302]	Time 0.095 (0.101)	Data 0.000 (0.006)	**Extract Features: [300/302]	Time 0.095 (0.099)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 43.8%
+
+ * Finished epoch  33  model no.1 mAP: 43.8% best: 43.8% *
+2022-05-13 19:51:44.710654
+Cost 3:09:31.149254
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.449 (1.449)	Data 1.353 (1.353)	**Extract Features: [100/203]	Time 0.106 (0.112)	Data 0.000 (0.014)	**Extract Features: [200/203]	Time 0.096 (0.109)	Data 0.000 (0.008)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:034] [001/400] | Loss: 2.618 | Ce: 2.558 | Entropy: 0.215 | GCC: 1.378 | Acc: 54.7%
+[Epoch:034] [100/400] | Loss: 2.071 | Ce: 2.222 | Entropy: 0.349 | GCC: 0.835 | Acc: 67.1%
+[Epoch:034] [200/400] | Loss: 2.074 | Ce: 2.201 | Entropy: 0.346 | GCC: 0.840 | Acc: 68.2%
+[Epoch:034] [300/400] | Loss: 2.080 | Ce: 2.174 | Entropy: 0.337 | GCC: 0.835 | Acc: 69.3%
+[Epoch:034] [400/400] | Loss: 2.075 | Ce: 2.149 | Entropy: 0.329 | GCC: 0.836 | Acc: 70.1%
+extracting......Extract Features: [1/302]	Time 1.624 (1.624)	Data 1.528 (1.528)	**Extract Features: [100/302]	Time 0.095 (0.110)	Data 0.000 (0.016)	**Extract Features: [200/302]	Time 0.095 (0.103)	Data 0.000 (0.008)	**Extract Features: [300/302]	Time 0.094 (0.100)	Data 0.000 (0.005)	**extracting done     
+Mean AP: 45.2%
+
+ * Finished epoch  34  model no.1 mAP: 45.2% best: 45.2% *
+2022-05-13 19:56:48.999169
+Cost 3:14:35.437758
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.174 (1.174)	Data 1.075 (1.075)	**Extract Features: [100/203]	Time 0.095 (0.106)	Data 0.000 (0.011)	**Extract Features: [200/203]	Time 0.096 (0.102)	Data 0.000 (0.006)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:035] [001/400] | Loss: 2.117 | Ce: 2.477 | Entropy: 0.210 | GCC: 0.811 | Acc: 57.8%
+[Epoch:035] [100/400] | Loss: 2.087 | Ce: 2.253 | Entropy: 0.348 | GCC: 0.822 | Acc: 67.4%
+[Epoch:035] [200/400] | Loss: 2.092 | Ce: 2.234 | Entropy: 0.355 | GCC: 0.811 | Acc: 68.2%
+[Epoch:035] [300/400] | Loss: 2.065 | Ce: 2.164 | Entropy: 0.337 | GCC: 0.823 | Acc: 70.1%
+[Epoch:035] [400/400] | Loss: 2.068 | Ce: 2.145 | Entropy: 0.330 | GCC: 0.830 | Acc: 70.8%
+extracting......Extract Features: [1/302]	Time 1.375 (1.375)	Data 1.279 (1.279)	**Extract Features: [100/302]	Time 0.095 (0.108)	Data 0.000 (0.013)	**Extract Features: [200/302]	Time 0.095 (0.101)	Data 0.000 (0.007)	**Extract Features: [300/302]	Time 0.096 (0.100)	Data 0.000 (0.005)	**extracting done     
+Mean AP: 45.5%
+
+ * Finished epoch  35  model no.1 mAP: 45.5% best: 45.5% *
+2022-05-13 20:02:16.367123
+Cost 3:20:02.805714
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.134 (1.134)	Data 1.021 (1.021)	**Extract Features: [100/203]	Time 0.096 (0.112)	Data 0.000 (0.012)	**Extract Features: [200/203]	Time 0.096 (0.112)	Data 0.000 (0.011)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:036] [001/400] | Loss: 2.094 | Ce: 2.149 | Entropy: 0.234 | GCC: 0.885 | Acc: 71.9%
+[Epoch:036] [100/400] | Loss: 2.128 | Ce: 2.278 | Entropy: 0.348 | GCC: 0.829 | Acc: 65.4%
+[Epoch:036] [200/400] | Loss: 2.134 | Ce: 2.264 | Entropy: 0.359 | GCC: 0.817 | Acc: 66.5%
+[Epoch:036] [300/400] | Loss: 2.097 | Ce: 2.193 | Entropy: 0.341 | GCC: 0.824 | Acc: 68.7%
+[Epoch:036] [400/400] | Loss: 2.083 | Ce: 2.166 | Entropy: 0.330 | GCC: 0.819 | Acc: 69.7%
+extracting......Extract Features: [1/302]	Time 1.309 (1.309)	Data 1.213 (1.213)	**Extract Features: [100/302]	Time 0.096 (0.107)	Data 0.000 (0.012)	**Extract Features: [200/302]	Time 0.095 (0.101)	Data 0.000 (0.006)	**Extract Features: [300/302]	Time 0.198 (0.099)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 46.8%
+
+ * Finished epoch  36  model no.1 mAP: 46.8% best: 46.8% *
+2022-05-13 20:07:35.712440
+Cost 3:25:22.151033
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.374 (1.374)	Data 1.277 (1.277)	**Extract Features: [100/203]	Time 0.095 (0.108)	Data 0.000 (0.013)	**Extract Features: [200/203]	Time 0.096 (0.105)	Data 0.000 (0.008)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:037] [001/400] | Loss: 1.988 | Ce: 2.190 | Entropy: 0.223 | GCC: 0.556 | Acc: 70.3%
+[Epoch:037] [100/400] | Loss: 2.074 | Ce: 2.266 | Entropy: 0.344 | GCC: 0.774 | Acc: 65.1%
+[Epoch:037] [200/400] | Loss: 2.071 | Ce: 2.224 | Entropy: 0.351 | GCC: 0.787 | Acc: 67.0%
+[Epoch:037] [300/400] | Loss: 2.050 | Ce: 2.180 | Entropy: 0.338 | GCC: 0.784 | Acc: 68.7%
+[Epoch:037] [400/400] | Loss: 2.044 | Ce: 2.152 | Entropy: 0.330 | GCC: 0.789 | Acc: 69.6%
+extracting......Extract Features: [1/302]	Time 1.938 (1.938)	Data 1.840 (1.840)	**Extract Features: [100/302]	Time 0.095 (0.114)	Data 0.000 (0.019)	**Extract Features: [200/302]	Time 0.095 (0.104)	Data 0.000 (0.009)	**Extract Features: [300/302]	Time 0.094 (0.101)	Data 0.000 (0.006)	**extracting done     
+Mean AP: 47.3%
+
+ * Finished epoch  37  model no.1 mAP: 47.3% best: 47.3% *
+2022-05-13 20:13:12.075987
+Cost 3:30:58.514580
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.200 (1.200)	Data 1.104 (1.104)	**Extract Features: [100/203]	Time 0.096 (0.106)	Data 0.000 (0.011)	**Extract Features: [200/203]	Time 0.097 (0.106)	Data 0.000 (0.007)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:038] [001/400] | Loss: 2.367 | Ce: 2.719 | Entropy: 0.312 | GCC: 0.429 | Acc: 45.3%
+[Epoch:038] [100/400] | Loss: 2.068 | Ce: 2.251 | Entropy: 0.352 | GCC: 0.773 | Acc: 66.8%
+[Epoch:038] [200/400] | Loss: 2.049 | Ce: 2.198 | Entropy: 0.352 | GCC: 0.785 | Acc: 68.8%
+[Epoch:038] [300/400] | Loss: 2.044 | Ce: 2.178 | Entropy: 0.340 | GCC: 0.771 | Acc: 69.4%
+[Epoch:038] [400/400] | Loss: 2.045 | Ce: 2.151 | Entropy: 0.332 | GCC: 0.779 | Acc: 70.5%
+extracting......Extract Features: [1/302]	Time 1.756 (1.756)	Data 1.659 (1.659)	**Extract Features: [100/302]	Time 0.095 (0.113)	Data 0.000 (0.018)	**Extract Features: [200/302]	Time 0.094 (0.104)	Data 0.000 (0.009)	**Extract Features: [300/302]	Time 0.094 (0.101)	Data 0.000 (0.006)	**extracting done     
+Mean AP: 48.6%
+
+ * Finished epoch  38  model no.1 mAP: 48.6% best: 48.6% *
+2022-05-13 20:18:47.345771
+Cost 3:36:33.784455
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 2.725 (2.725)	Data 2.615 (2.615)	**Extract Features: [100/203]	Time 0.097 (0.132)	Data 0.002 (0.029)	**Extract Features: [200/203]	Time 0.096 (0.118)	Data 0.000 (0.015)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:039] [001/400] | Loss: 1.768 | Ce: 1.741 | Entropy: 0.187 | GCC: 0.864 | Acc: 84.4%
+[Epoch:039] [100/400] | Loss: 2.056 | Ce: 2.236 | Entropy: 0.342 | GCC: 0.790 | Acc: 67.4%
+[Epoch:039] [200/400] | Loss: 2.042 | Ce: 2.210 | Entropy: 0.346 | GCC: 0.772 | Acc: 68.4%
+[Epoch:039] [300/400] | Loss: 2.012 | Ce: 2.157 | Entropy: 0.331 | GCC: 0.769 | Acc: 70.0%
+[Epoch:039] [400/400] | Loss: 2.000 | Ce: 2.122 | Entropy: 0.322 | GCC: 0.768 | Acc: 71.2%
+extracting......Extract Features: [1/302]	Time 1.390 (1.390)	Data 1.294 (1.294)	**Extract Features: [100/302]	Time 0.095 (0.108)	Data 0.000 (0.013)	**Extract Features: [200/302]	Time 0.099 (0.102)	Data 0.000 (0.007)	**Extract Features: [300/302]	Time 0.094 (0.100)	Data 0.000 (0.005)	**extracting done     
+Mean AP: 48.9%
+
+ * Finished epoch  39  model no.1 mAP: 48.9% best: 48.9% *
+2022-05-13 20:23:41.747406
+Cost 3:41:28.186002
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.141 (1.141)	Data 1.045 (1.045)	**Extract Features: [100/203]	Time 0.095 (0.105)	Data 0.000 (0.011)	**Extract Features: [200/203]	Time 0.097 (0.105)	Data 0.000 (0.008)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:040] [001/400] | Loss: 1.746 | Ce: 1.925 | Entropy: 0.149 | GCC: 0.607 | Acc: 78.1%
+[Epoch:040] [100/400] | Loss: 2.064 | Ce: 2.240 | Entropy: 0.346 | GCC: 0.768 | Acc: 67.2%
+[Epoch:040] [200/400] | Loss: 2.046 | Ce: 2.190 | Entropy: 0.349 | GCC: 0.773 | Acc: 68.9%
+[Epoch:040] [300/400] | Loss: 2.022 | Ce: 2.151 | Entropy: 0.337 | GCC: 0.760 | Acc: 70.3%
+[Epoch:040] [400/400] | Loss: 2.010 | Ce: 2.111 | Entropy: 0.328 | GCC: 0.770 | Acc: 71.6%
+extracting......Extract Features: [1/302]	Time 1.328 (1.328)	Data 1.232 (1.232)	**Extract Features: [100/302]	Time 0.095 (0.107)	Data 0.000 (0.013)	**Extract Features: [200/302]	Time 0.098 (0.101)	Data 0.000 (0.006)	**Extract Features: [300/302]	Time 0.094 (0.099)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 49.6%
+
+ * Finished epoch  40  model no.1 mAP: 49.6% best: 49.6% *
+2022-05-13 20:29:08.561484
+Cost 3:46:55.000091
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.350 (1.350)	Data 1.252 (1.252)	**Extract Features: [100/203]	Time 0.096 (0.111)	Data 0.000 (0.013)	**Extract Features: [200/203]	Time 0.095 (0.115)	Data 0.000 (0.018)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:041] [001/400] | Loss: 2.260 | Ce: 1.902 | Entropy: 0.225 | GCC: 1.230 | Acc: 79.7%
+[Epoch:041] [100/400] | Loss: 2.345 | Ce: 2.552 | Entropy: 0.393 | GCC: 0.815 | Acc: 58.5%
+[Epoch:041] [200/400] | Loss: 2.324 | Ce: 2.503 | Entropy: 0.387 | GCC: 0.801 | Acc: 60.3%
+[Epoch:041] [300/400] | Loss: 2.278 | Ce: 2.412 | Entropy: 0.369 | GCC: 0.807 | Acc: 62.8%
+[Epoch:041] [400/400] | Loss: 2.274 | Ce: 2.390 | Entropy: 0.361 | GCC: 0.795 | Acc: 63.9%
+extracting......Extract Features: [1/302]	Time 3.686 (3.686)	Data 3.588 (3.588)	**Extract Features: [100/302]	Time 0.097 (0.176)	Data 0.000 (0.075)	**Extract Features: [200/302]	Time 0.114 (0.153)	Data 0.002 (0.053)	**Extract Features: [300/302]	Time 0.096 (0.143)	Data 0.000 (0.042)	**extracting done     
+Mean AP: 50.8%
+
+ * Finished epoch  41  model no.1 mAP: 50.8% best: 50.8% *
+2022-05-13 20:34:51.994729
+Cost 3:52:38.433321
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.325 (1.325)	Data 1.228 (1.228)	**Extract Features: [100/203]	Time 0.095 (0.107)	Data 0.000 (0.013)	**Extract Features: [200/203]	Time 0.096 (0.103)	Data 0.000 (0.007)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:042] [001/400] | Loss: 2.342 | Ce: 2.103 | Entropy: 0.251 | GCC: 1.120 | Acc: 75.0%
+[Epoch:042] [100/400] | Loss: 1.963 | Ce: 2.161 | Entropy: 0.357 | GCC: 0.767 | Acc: 69.7%
+[Epoch:042] [200/400] | Loss: 1.993 | Ce: 2.161 | Entropy: 0.361 | GCC: 0.764 | Acc: 69.5%
+[Epoch:042] [300/400] | Loss: 1.990 | Ce: 2.133 | Entropy: 0.347 | GCC: 0.759 | Acc: 70.4%
+[Epoch:042] [400/400] | Loss: 1.972 | Ce: 2.101 | Entropy: 0.335 | GCC: 0.751 | Acc: 71.5%
+extracting......Extract Features: [1/302]	Time 2.657 (2.657)	Data 2.551 (2.551)	**Extract Features: [100/302]	Time 0.097 (0.135)	Data 0.000 (0.033)	**Extract Features: [200/302]	Time 0.097 (0.123)	Data 0.001 (0.023)	**Extract Features: [300/302]	Time 0.104 (0.123)	Data 0.000 (0.022)	**extracting done     
+Mean AP: 52.7%
+
+ * Finished epoch  42  model no.1 mAP: 52.7% best: 52.7% *
+2022-05-13 20:40:03.888401
+Cost 3:57:50.327000
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 2.732 (2.732)	Data 2.620 (2.620)	**Extract Features: [100/203]	Time 0.113 (0.131)	Data 0.011 (0.028)	**Extract Features: [200/203]	Time 0.096 (0.118)	Data 0.000 (0.014)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:043] [001/400] | Loss: 1.755 | Ce: 1.927 | Entropy: 0.170 | GCC: 0.870 | Acc: 76.6%
+[Epoch:043] [100/400] | Loss: 1.964 | Ce: 2.183 | Entropy: 0.341 | GCC: 0.721 | Acc: 69.5%
+[Epoch:043] [200/400] | Loss: 1.963 | Ce: 2.145 | Entropy: 0.346 | GCC: 0.725 | Acc: 71.1%
+[Epoch:043] [300/400] | Loss: 1.938 | Ce: 2.093 | Entropy: 0.330 | GCC: 0.719 | Acc: 72.5%
+[Epoch:043] [400/400] | Loss: 1.926 | Ce: 2.061 | Entropy: 0.319 | GCC: 0.721 | Acc: 73.4%
+extracting......Extract Features: [1/302]	Time 2.865 (2.865)	Data 2.767 (2.767)	**Extract Features: [100/302]	Time 0.098 (0.130)	Data 0.002 (0.029)	**Extract Features: [200/302]	Time 0.370 (0.123)	Data 0.273 (0.021)	**Extract Features: [300/302]	Time 0.102 (0.129)	Data 0.000 (0.027)	**extracting done     
+Mean AP: 53.7%
+
+ * Finished epoch  43  model no.1 mAP: 53.7% best: 53.7% *
+2022-05-13 20:46:09.638893
+Cost 4:03:56.077497
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 2.577 (2.577)	Data 2.467 (2.467)	**Extract Features: [100/203]	Time 0.094 (0.130)	Data 0.000 (0.026)	**Extract Features: [200/203]	Time 0.094 (0.112)	Data 0.000 (0.013)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:044] [001/400] | Loss: 1.964 | Ce: 1.956 | Entropy: 0.230 | GCC: 0.793 | Acc: 79.7%
+[Epoch:044] [100/400] | Loss: 2.244 | Ce: 2.486 | Entropy: 0.378 | GCC: 0.756 | Acc: 60.6%
+[Epoch:044] [200/400] | Loss: 2.208 | Ce: 2.403 | Entropy: 0.371 | GCC: 0.765 | Acc: 62.9%
+[Epoch:044] [300/400] | Loss: 2.187 | Ce: 2.346 | Entropy: 0.359 | GCC: 0.763 | Acc: 64.9%
+[Epoch:044] [400/400] | Loss: 2.179 | Ce: 2.310 | Entropy: 0.349 | GCC: 0.765 | Acc: 66.0%
+extracting......Extract Features: [1/302]	Time 3.316 (3.316)	Data 3.218 (3.218)	**Extract Features: [100/302]	Time 0.101 (0.137)	Data 0.000 (0.036)	**Extract Features: [200/302]	Time 0.120 (0.122)	Data 0.000 (0.020)	**Extract Features: [300/302]	Time 0.097 (0.117)	Data 0.000 (0.015)	**extracting done     
+Mean AP: 54.9%
+
+ * Finished epoch  44  model no.1 mAP: 54.9% best: 54.9% *
+2022-05-13 20:52:37.105964
+Cost 4:10:23.544726
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 3.784 (3.784)	Data 3.682 (3.682)	**Extract Features: [100/203]	Time 0.122 (0.144)	Data 0.006 (0.039)	**Extract Features: [200/203]	Time 0.096 (0.126)	Data 0.000 (0.020)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:045] [001/400] | Loss: 2.169 | Ce: 2.249 | Entropy: 0.193 | GCC: 0.915 | Acc: 65.6%
+[Epoch:045] [100/400] | Loss: 1.962 | Ce: 2.198 | Entropy: 0.356 | GCC: 0.698 | Acc: 67.7%
+[Epoch:045] [200/400] | Loss: 1.967 | Ce: 2.163 | Entropy: 0.356 | GCC: 0.715 | Acc: 69.2%
+[Epoch:045] [300/400] | Loss: 1.943 | Ce: 2.112 | Entropy: 0.338 | GCC: 0.713 | Acc: 70.8%
+[Epoch:045] [400/400] | Loss: 1.933 | Ce: 2.083 | Entropy: 0.327 | GCC: 0.714 | Acc: 71.7%
+extracting......Extract Features: [1/302]	Time 2.743 (2.743)	Data 2.627 (2.627)	**Extract Features: [100/302]	Time 0.096 (0.141)	Data 0.001 (0.038)	**Extract Features: [200/302]	Time 0.107 (0.123)	Data 0.003 (0.022)	**Extract Features: [300/302]	Time 0.102 (0.130)	Data 0.000 (0.029)	**extracting done     
+Mean AP: 55.3%
+
+ * Finished epoch  45  model no.1 mAP: 55.3% best: 55.3% *
+2022-05-13 20:57:36.230999
+Cost 4:15:22.669695
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 3.035 (3.035)	Data 2.933 (2.933)	**Extract Features: [100/203]	Time 0.118 (0.144)	Data 0.007 (0.034)	**Extract Features: [200/203]	Time 0.129 (0.127)	Data 0.000 (0.018)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:046] [001/400] | Loss: 1.727 | Ce: 2.008 | Entropy: 0.206 | GCC: 0.469 | Acc: 76.6%
+[Epoch:046] [100/400] | Loss: 1.952 | Ce: 2.160 | Entropy: 0.356 | GCC: 0.726 | Acc: 69.9%
+[Epoch:046] [200/400] | Loss: 1.933 | Ce: 2.112 | Entropy: 0.353 | GCC: 0.716 | Acc: 71.4%
+[Epoch:046] [300/400] | Loss: 1.913 | Ce: 2.065 | Entropy: 0.335 | GCC: 0.722 | Acc: 72.9%
+[Epoch:046] [400/400] | Loss: 1.901 | Ce: 2.035 | Entropy: 0.325 | GCC: 0.724 | Acc: 73.8%
+extracting......Extract Features: [1/302]	Time 1.276 (1.276)	Data 1.180 (1.180)	**Extract Features: [100/302]	Time 0.096 (0.107)	Data 0.000 (0.012)	**Extract Features: [200/302]	Time 0.096 (0.116)	Data 0.000 (0.018)	**Extract Features: [300/302]	Time 0.119 (0.113)	Data 0.015 (0.014)	**extracting done     
+Mean AP: 55.9%
+
+ * Finished epoch  46  model no.1 mAP: 55.9% best: 55.9% *
+2022-05-13 21:02:42.658931
+Cost 4:20:29.097537
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 2.916 (2.916)	Data 2.818 (2.818)	**Extract Features: [100/203]	Time 0.096 (0.139)	Data 0.000 (0.037)	**Extract Features: [200/203]	Time 0.110 (0.127)	Data 0.000 (0.023)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:047] [001/400] | Loss: 1.838 | Ce: 1.950 | Entropy: 0.156 | GCC: 0.909 | Acc: 75.0%
+[Epoch:047] [100/400] | Loss: 1.903 | Ce: 2.124 | Entropy: 0.336 | GCC: 0.705 | Acc: 71.5%
+[Epoch:047] [200/400] | Loss: 1.885 | Ce: 2.073 | Entropy: 0.337 | GCC: 0.715 | Acc: 72.9%
+[Epoch:047] [300/400] | Loss: 1.884 | Ce: 2.039 | Entropy: 0.328 | GCC: 0.720 | Acc: 73.9%
+[Epoch:047] [400/400] | Loss: 1.874 | Ce: 2.011 | Entropy: 0.319 | GCC: 0.721 | Acc: 74.7%
+extracting......Extract Features: [1/302]	Time 1.227 (1.227)	Data 1.131 (1.131)	**Extract Features: [100/302]	Time 0.094 (0.106)	Data 0.000 (0.012)	**Extract Features: [200/302]	Time 0.094 (0.101)	Data 0.000 (0.006)	**Extract Features: [300/302]	Time 0.094 (0.099)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 57.3%
+
+ * Finished epoch  47  model no.1 mAP: 57.3% best: 57.3% *
+2022-05-13 21:08:04.689441
+Cost 4:25:51.128085
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 2.075 (2.075)	Data 1.977 (1.977)	**Extract Features: [100/203]	Time 0.136 (0.125)	Data 0.001 (0.023)	**Extract Features: [200/203]	Time 0.099 (0.125)	Data 0.000 (0.023)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:048] [001/400] | Loss: 1.895 | Ce: 2.037 | Entropy: 0.177 | GCC: 0.977 | Acc: 76.6%
+[Epoch:048] [100/400] | Loss: 1.901 | Ce: 2.111 | Entropy: 0.338 | GCC: 0.718 | Acc: 71.3%
+[Epoch:048] [200/400] | Loss: 1.881 | Ce: 2.064 | Entropy: 0.339 | GCC: 0.709 | Acc: 72.2%
+[Epoch:048] [300/400] | Loss: 1.857 | Ce: 2.020 | Entropy: 0.325 | GCC: 0.705 | Acc: 74.0%
+[Epoch:048] [400/400] | Loss: 1.854 | Ce: 1.998 | Entropy: 0.316 | GCC: 0.709 | Acc: 74.8%
+extracting......Extract Features: [1/302]	Time 2.076 (2.076)	Data 1.979 (1.979)	**Extract Features: [100/302]	Time 0.095 (0.115)	Data 0.000 (0.020)	**Extract Features: [200/302]	Time 0.111 (0.106)	Data 0.001 (0.010)	**Extract Features: [300/302]	Time 0.096 (0.105)	Data 0.000 (0.007)	**extracting done     
+Mean AP: 57.1%
+
+ * Finished epoch  48  model no.1 mAP: 57.1% best: 57.3%
+2022-05-13 21:13:41.062244
+Cost 4:31:27.500864
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 3.230 (3.230)	Data 3.133 (3.133)	**Extract Features: [100/203]	Time 0.112 (0.139)	Data 0.000 (0.038)	**Extract Features: [200/203]	Time 0.101 (0.126)	Data 0.000 (0.021)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:049] [001/400] | Loss: 1.798 | Ce: 2.030 | Entropy: 0.186 | GCC: 0.625 | Acc: 73.4%
+[Epoch:049] [100/400] | Loss: 1.915 | Ce: 2.143 | Entropy: 0.340 | GCC: 0.699 | Acc: 70.2%
+[Epoch:049] [200/400] | Loss: 1.917 | Ce: 2.117 | Entropy: 0.347 | GCC: 0.702 | Acc: 70.9%
+[Epoch:049] [300/400] | Loss: 1.884 | Ce: 2.058 | Entropy: 0.325 | GCC: 0.703 | Acc: 72.9%
+[Epoch:049] [400/400] | Loss: 1.871 | Ce: 2.021 | Entropy: 0.317 | GCC: 0.705 | Acc: 74.1%
+extracting......Extract Features: [1/302]	Time 2.643 (2.643)	Data 2.547 (2.547)	**Extract Features: [100/302]	Time 0.095 (0.245)	Data 0.000 (0.150)	**Extract Features: [200/302]	Time 2.003 (0.190)	Data 1.908 (0.095)	**Extract Features: [300/302]	Time 0.096 (0.235)	Data 0.000 (0.140)	**extracting done     
+Mean AP: 58.0%
+
+ * Finished epoch  49  model no.1 mAP: 58.0% best: 58.0% *
+2022-05-13 21:19:12.404271
+Cost 4:36:58.842865
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.323 (1.323)	Data 1.227 (1.227)	**Extract Features: [100/203]	Time 0.095 (0.108)	Data 0.000 (0.013)	**Extract Features: [200/203]	Time 0.094 (0.103)	Data 0.000 (0.008)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:050] [001/400] | Loss: 1.838 | Ce: 1.916 | Entropy: 0.181 | GCC: 0.884 | Acc: 81.2%
+[Epoch:050] [100/400] | Loss: 1.871 | Ce: 2.113 | Entropy: 0.340 | GCC: 0.668 | Acc: 71.1%
+[Epoch:050] [200/400] | Loss: 1.872 | Ce: 2.066 | Entropy: 0.342 | GCC: 0.684 | Acc: 72.6%
+[Epoch:050] [300/400] | Loss: 1.845 | Ce: 2.014 | Entropy: 0.325 | GCC: 0.684 | Acc: 74.3%
+[Epoch:050] [400/400] | Loss: 1.835 | Ce: 1.992 | Entropy: 0.315 | GCC: 0.681 | Acc: 75.2%
+extracting......Extract Features: [1/302]	Time 1.807 (1.807)	Data 1.711 (1.711)	**Extract Features: [100/302]	Time 0.095 (0.114)	Data 0.000 (0.019)	**Extract Features: [200/302]	Time 0.095 (0.105)	Data 0.000 (0.010)	**Extract Features: [300/302]	Time 0.095 (0.103)	Data 0.000 (0.007)	**extracting done     
+Mean AP: 58.4%
+
+ * Finished epoch  50  model no.1 mAP: 58.4% best: 58.4% *
+2022-05-13 21:24:28.006515
+Cost 4:42:14.445115
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.040 (1.040)	Data 0.942 (0.942)	**Extract Features: [100/203]	Time 0.094 (0.105)	Data 0.000 (0.010)	**Extract Features: [200/203]	Time 0.111 (0.107)	Data 0.000 (0.011)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:051] [001/400] | Loss: 2.217 | Ce: 2.523 | Entropy: 0.279 | GCC: 0.685 | Acc: 62.5%
+[Epoch:051] [100/400] | Loss: 1.859 | Ce: 2.063 | Entropy: 0.341 | GCC: 0.700 | Acc: 72.4%
+[Epoch:051] [200/400] | Loss: 1.860 | Ce: 2.045 | Entropy: 0.341 | GCC: 0.697 | Acc: 72.8%
+[Epoch:051] [300/400] | Loss: 1.835 | Ce: 2.003 | Entropy: 0.326 | GCC: 0.685 | Acc: 74.3%
+[Epoch:051] [400/400] | Loss: 1.832 | Ce: 1.988 | Entropy: 0.316 | GCC: 0.679 | Acc: 74.9%
+extracting......Extract Features: [1/302]	Time 1.499 (1.499)	Data 1.402 (1.402)	**Extract Features: [100/302]	Time 0.096 (0.109)	Data 0.000 (0.014)	**Extract Features: [200/302]	Time 0.095 (0.105)	Data 0.000 (0.010)	**Extract Features: [300/302]	Time 0.094 (0.102)	Data 0.000 (0.006)	**extracting done     
+Mean AP: 59.2%
+
+ * Finished epoch  51  model no.1 mAP: 59.2% best: 59.2% *
+2022-05-13 21:30:04.751701
+Cost 4:47:51.190292
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.178 (1.178)	Data 1.081 (1.081)	**Extract Features: [100/203]	Time 0.503 (0.119)	Data 0.397 (0.022)	**Extract Features: [200/203]	Time 0.096 (0.138)	Data 0.000 (0.039)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:052] [001/400] | Loss: 1.775 | Ce: 1.828 | Entropy: 0.181 | GCC: 0.774 | Acc: 84.4%
+[Epoch:052] [100/400] | Loss: 1.817 | Ce: 2.041 | Entropy: 0.340 | GCC: 0.662 | Acc: 74.0%
+[Epoch:052] [200/400] | Loss: 1.810 | Ce: 2.004 | Entropy: 0.336 | GCC: 0.669 | Acc: 75.0%
+[Epoch:052] [300/400] | Loss: 1.810 | Ce: 1.987 | Entropy: 0.327 | GCC: 0.663 | Acc: 75.3%
+[Epoch:052] [400/400] | Loss: 1.800 | Ce: 1.960 | Entropy: 0.317 | GCC: 0.667 | Acc: 76.2%
+extracting......Extract Features: [1/302]	Time 1.318 (1.318)	Data 1.220 (1.220)	**Extract Features: [100/302]	Time 0.095 (0.107)	Data 0.000 (0.012)	**Extract Features: [200/302]	Time 0.094 (0.101)	Data 0.000 (0.006)	**Extract Features: [300/302]	Time 0.094 (0.099)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 59.6%
+
+ * Finished epoch  52  model no.1 mAP: 59.6% best: 59.6% *
+2022-05-13 21:35:27.892505
+Cost 4:53:14.331126
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.690 (1.690)	Data 1.594 (1.594)	**Extract Features: [100/203]	Time 0.106 (0.113)	Data 0.001 (0.016)	**Extract Features: [200/203]	Time 0.100 (0.134)	Data 0.000 (0.035)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:053] [001/400] | Loss: 2.248 | Ce: 2.797 | Entropy: 0.329 | GCC: 0.411 | Acc: 56.2%
+[Epoch:053] [100/400] | Loss: 1.817 | Ce: 2.062 | Entropy: 0.328 | GCC: 0.669 | Acc: 71.5%
+[Epoch:053] [200/400] | Loss: 1.809 | Ce: 2.018 | Entropy: 0.325 | GCC: 0.666 | Acc: 73.4%
+[Epoch:053] [300/400] | Loss: 1.797 | Ce: 1.982 | Entropy: 0.314 | GCC: 0.668 | Acc: 75.2%
+[Epoch:053] [400/400] | Loss: 1.788 | Ce: 1.952 | Entropy: 0.305 | GCC: 0.672 | Acc: 76.1%
+extracting......Extract Features: [1/302]	Time 1.662 (1.662)	Data 1.566 (1.566)	**Extract Features: [100/302]	Time 0.095 (0.115)	Data 0.000 (0.021)	**Extract Features: [200/302]	Time 0.095 (0.105)	Data 0.000 (0.010)	**Extract Features: [300/302]	Time 0.096 (0.102)	Data 0.000 (0.007)	**extracting done     
+Mean AP: 60.5%
+
+ * Finished epoch  53  model no.1 mAP: 60.5% best: 60.5% *
+2022-05-13 21:40:56.029964
+Cost 4:58:42.468566
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.667 (1.667)	Data 1.569 (1.569)	**Extract Features: [100/203]	Time 0.097 (0.115)	Data 0.000 (0.016)	**Extract Features: [200/203]	Time 0.105 (0.107)	Data 0.000 (0.008)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:054] [001/400] | Loss: 1.673 | Ce: 1.757 | Entropy: 0.215 | GCC: 0.591 | Acc: 78.1%
+[Epoch:054] [100/400] | Loss: 1.826 | Ce: 2.060 | Entropy: 0.347 | GCC: 0.672 | Acc: 72.3%
+[Epoch:054] [200/400] | Loss: 1.815 | Ce: 2.026 | Entropy: 0.344 | GCC: 0.670 | Acc: 73.6%
+[Epoch:054] [300/400] | Loss: 1.791 | Ce: 1.987 | Entropy: 0.329 | GCC: 0.657 | Acc: 75.0%
+[Epoch:054] [400/400] | Loss: 1.786 | Ce: 1.965 | Entropy: 0.320 | GCC: 0.657 | Acc: 75.7%
+extracting......Extract Features: [1/302]	Time 1.604 (1.604)	Data 1.508 (1.508)	**Extract Features: [100/302]	Time 0.097 (0.111)	Data 0.000 (0.015)	**Extract Features: [200/302]	Time 0.097 (0.103)	Data 0.000 (0.008)	**Extract Features: [300/302]	Time 0.096 (0.103)	Data 0.000 (0.006)	**extracting done     
+Mean AP: 60.6%
+
+ * Finished epoch  54  model no.1 mAP: 60.6% best: 60.6% *
+2022-05-13 21:46:10.471467
+Cost 5:03:56.910173
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.465 (1.465)	Data 1.368 (1.368)	**Extract Features: [100/203]	Time 0.096 (0.111)	Data 0.000 (0.014)	**Extract Features: [200/203]	Time 0.098 (0.107)	Data 0.000 (0.008)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:055] [001/400] | Loss: 1.834 | Ce: 2.007 | Entropy: 0.204 | GCC: 0.689 | Acc: 79.7%
+[Epoch:055] [100/400] | Loss: 1.770 | Ce: 2.008 | Entropy: 0.326 | GCC: 0.647 | Acc: 74.3%
+[Epoch:055] [200/400] | Loss: 1.781 | Ce: 1.997 | Entropy: 0.333 | GCC: 0.637 | Acc: 74.4%
+[Epoch:055] [300/400] | Loss: 1.762 | Ce: 1.948 | Entropy: 0.321 | GCC: 0.644 | Acc: 76.2%
+[Epoch:055] [400/400] | Loss: 1.756 | Ce: 1.928 | Entropy: 0.311 | GCC: 0.645 | Acc: 76.9%
+extracting......Extract Features: [1/302]	Time 3.938 (3.938)	Data 3.841 (3.841)	**Extract Features: [100/302]	Time 0.096 (0.172)	Data 0.000 (0.071)	**Extract Features: [200/302]	Time 0.096 (0.139)	Data 0.000 (0.037)	**Extract Features: [300/302]	Time 0.094 (0.128)	Data 0.000 (0.025)	**extracting done     
+Mean AP: 61.7%
+
+ * Finished epoch  55  model no.1 mAP: 61.7% best: 61.7% *
+2022-05-13 21:51:34.712575
+Cost 5:09:21.151369
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 3.909 (3.909)	Data 3.811 (3.811)	**Extract Features: [100/203]	Time 0.104 (0.154)	Data 0.002 (0.043)	**Extract Features: [200/203]	Time 0.111 (0.143)	Data 0.000 (0.030)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:056] [001/400] | Loss: 1.635 | Ce: 1.811 | Entropy: 0.170 | GCC: 0.697 | Acc: 82.8%
+[Epoch:056] [100/400] | Loss: 1.795 | Ce: 2.039 | Entropy: 0.333 | GCC: 0.648 | Acc: 72.4%
+[Epoch:056] [200/400] | Loss: 1.789 | Ce: 2.006 | Entropy: 0.339 | GCC: 0.641 | Acc: 73.6%
+[Epoch:056] [300/400] | Loss: 1.784 | Ce: 1.981 | Entropy: 0.328 | GCC: 0.638 | Acc: 75.0%
+[Epoch:056] [400/400] | Loss: 1.763 | Ce: 1.949 | Entropy: 0.315 | GCC: 0.634 | Acc: 76.1%
+extracting......Extract Features: [1/302]	Time 1.322 (1.322)	Data 1.223 (1.223)	**Extract Features: [100/302]	Time 0.099 (0.107)	Data 0.005 (0.013)	**Extract Features: [200/302]	Time 0.095 (0.101)	Data 0.000 (0.006)	**Extract Features: [300/302]	Time 0.097 (0.104)	Data 0.000 (0.008)	**extracting done     
+Mean AP: 61.8%
+
+ * Finished epoch  56  model no.1 mAP: 61.8% best: 61.8% *
+2022-05-13 21:56:55.491402
+Cost 5:14:41.930094
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 3.902 (3.902)	Data 3.785 (3.785)	**Extract Features: [100/203]	Time 0.096 (0.144)	Data 0.000 (0.041)	**Extract Features: [200/203]	Time 0.098 (0.127)	Data 0.000 (0.023)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:057] [001/400] | Loss: 1.818 | Ce: 2.047 | Entropy: 0.114 | GCC: 0.920 | Acc: 75.0%
+[Epoch:057] [100/400] | Loss: 1.818 | Ce: 2.075 | Entropy: 0.342 | GCC: 0.633 | Acc: 71.4%
+[Epoch:057] [200/400] | Loss: 1.781 | Ce: 2.007 | Entropy: 0.343 | GCC: 0.634 | Acc: 73.9%
+[Epoch:057] [300/400] | Loss: 1.788 | Ce: 1.981 | Entropy: 0.335 | GCC: 0.647 | Acc: 74.8%
+[Epoch:057] [400/400] | Loss: 1.770 | Ce: 1.947 | Entropy: 0.321 | GCC: 0.644 | Acc: 76.0%
+extracting......Extract Features: [1/302]	Time 3.227 (3.227)	Data 3.130 (3.130)	**Extract Features: [100/302]	Time 0.097 (0.155)	Data 0.000 (0.053)	**Extract Features: [200/302]	Time 0.104 (0.139)	Data 0.000 (0.036)	**Extract Features: [300/302]	Time 0.096 (0.131)	Data 0.000 (0.028)	**extracting done     
+Mean AP: 62.2%
+
+ * Finished epoch  57  model no.1 mAP: 62.2% best: 62.2% *
+2022-05-13 22:02:32.630589
+Cost 5:20:19.069178
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.277 (1.277)	Data 1.181 (1.181)	**Extract Features: [100/203]	Time 0.094 (0.107)	Data 0.000 (0.012)	**Extract Features: [200/203]	Time 0.096 (0.102)	Data 0.000 (0.006)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:058] [001/400] | Loss: 1.884 | Ce: 2.078 | Entropy: 0.196 | GCC: 0.746 | Acc: 75.0%
+[Epoch:058] [100/400] | Loss: 1.771 | Ce: 2.015 | Entropy: 0.327 | GCC: 0.630 | Acc: 74.4%
+[Epoch:058] [200/400] | Loss: 1.756 | Ce: 1.987 | Entropy: 0.324 | GCC: 0.614 | Acc: 75.3%
+[Epoch:058] [300/400] | Loss: 1.752 | Ce: 1.961 | Entropy: 0.315 | GCC: 0.618 | Acc: 76.1%
+[Epoch:058] [400/400] | Loss: 1.747 | Ce: 1.946 | Entropy: 0.310 | GCC: 0.611 | Acc: 76.6%
+extracting......Extract Features: [1/302]	Time 3.287 (3.287)	Data 3.189 (3.189)	**Extract Features: [100/302]	Time 0.099 (0.147)	Data 0.000 (0.040)	**Extract Features: [200/302]	Time 0.109 (0.130)	Data 0.003 (0.023)	**Extract Features: [300/302]	Time 0.097 (0.125)	Data 0.000 (0.020)	**extracting done     
+Mean AP: 62.2%
+
+ * Finished epoch  58  model no.1 mAP: 62.2% best: 62.2% *
+2022-05-13 22:07:53.338824
+Cost 5:25:39.777425
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 2.863 (2.863)	Data 2.762 (2.762)	**Extract Features: [100/203]	Time 0.104 (0.136)	Data 0.003 (0.029)	**Extract Features: [200/203]	Time 0.094 (0.122)	Data 0.000 (0.015)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:059] [001/400] | Loss: 1.709 | Ce: 2.012 | Entropy: 0.203 | GCC: 0.576 | Acc: 65.6%
+[Epoch:059] [100/400] | Loss: 1.756 | Ce: 2.002 | Entropy: 0.319 | GCC: 0.624 | Acc: 75.3%
+[Epoch:059] [200/400] | Loss: 1.779 | Ce: 2.000 | Entropy: 0.336 | GCC: 0.644 | Acc: 75.1%
+[Epoch:059] [300/400] | Loss: 1.759 | Ce: 1.963 | Entropy: 0.320 | GCC: 0.638 | Acc: 76.3%
+[Epoch:059] [400/400] | Loss: 1.745 | Ce: 1.934 | Entropy: 0.311 | GCC: 0.636 | Acc: 77.0%
+extracting......Extract Features: [1/302]	Time 2.590 (2.590)	Data 2.493 (2.493)	**Extract Features: [100/302]	Time 0.099 (0.131)	Data 0.000 (0.027)	**Extract Features: [200/302]	Time 0.119 (0.124)	Data 0.000 (0.021)	**Extract Features: [300/302]	Time 0.096 (0.121)	Data 0.000 (0.019)	**extracting done     
+Mean AP: 62.7%
+
+ * Finished epoch  59  model no.1 mAP: 62.7% best: 62.7% *
+2022-05-13 22:12:45.475668
+Cost 5:30:31.914373
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 3.722 (3.722)	Data 3.624 (3.624)	**Extract Features: [100/203]	Time 0.096 (0.147)	Data 0.000 (0.043)	**Extract Features: [200/203]	Time 0.100 (0.129)	Data 0.000 (0.023)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:060] [001/400] | Loss: 1.734 | Ce: 1.924 | Entropy: 0.239 | GCC: 0.484 | Acc: 81.2%
+[Epoch:060] [100/400] | Loss: 1.751 | Ce: 2.001 | Entropy: 0.329 | GCC: 0.628 | Acc: 73.9%
+[Epoch:060] [200/400] | Loss: 1.744 | Ce: 1.969 | Entropy: 0.329 | GCC: 0.634 | Acc: 75.2%
+[Epoch:060] [300/400] | Loss: 1.747 | Ce: 1.942 | Entropy: 0.318 | GCC: 0.645 | Acc: 76.0%
+[Epoch:060] [400/400] | Loss: 1.743 | Ce: 1.925 | Entropy: 0.313 | GCC: 0.638 | Acc: 76.7%
+extracting......Extract Features: [1/302]	Time 1.172 (1.172)	Data 1.075 (1.075)	**Extract Features: [100/302]	Time 0.095 (0.106)	Data 0.000 (0.011)	**Extract Features: [200/302]	Time 0.095 (0.100)	Data 0.000 (0.006)	**Extract Features: [300/302]	Time 0.096 (0.100)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 63.3%
+
+ * Finished epoch  60  model no.1 mAP: 63.3% best: 63.3% *
+2022-05-13 22:17:35.854661
+Cost 5:35:22.293262
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 2.953 (2.953)	Data 2.837 (2.837)	**Extract Features: [100/203]	Time 0.107 (0.141)	Data 0.000 (0.033)	**Extract Features: [200/203]	Time 0.095 (0.125)	Data 0.000 (0.018)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:061] [001/400] | Loss: 1.429 | Ce: 1.662 | Entropy: 0.147 | GCC: 0.649 | Acc: 87.5%
+[Epoch:061] [100/400] | Loss: 1.757 | Ce: 2.023 | Entropy: 0.328 | GCC: 0.623 | Acc: 74.3%
+[Epoch:061] [200/400] | Loss: 1.758 | Ce: 1.987 | Entropy: 0.337 | GCC: 0.638 | Acc: 75.2%
+[Epoch:061] [300/400] | Loss: 1.764 | Ce: 1.966 | Entropy: 0.328 | GCC: 0.646 | Acc: 76.0%
+[Epoch:061] [400/400] | Loss: 1.755 | Ce: 1.942 | Entropy: 0.320 | GCC: 0.642 | Acc: 76.8%
+extracting......Extract Features: [1/302]	Time 1.261 (1.261)	Data 1.164 (1.164)	**Extract Features: [100/302]	Time 0.095 (0.106)	Data 0.000 (0.012)	**Extract Features: [200/302]	Time 0.095 (0.101)	Data 0.000 (0.006)	**Extract Features: [300/302]	Time 0.094 (0.099)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 63.7%
+
+ * Finished epoch  61  model no.1 mAP: 63.7% best: 63.7% *
+2022-05-13 22:22:54.364232
+Cost 5:40:40.803019
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 3.038 (3.038)	Data 2.924 (2.924)	**Extract Features: [100/203]	Time 0.106 (0.134)	Data 0.000 (0.032)	**Extract Features: [200/203]	Time 0.112 (0.130)	Data 0.010 (0.017)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:062] [001/400] | Loss: 2.181 | Ce: 2.138 | Entropy: 0.247 | GCC: 1.150 | Acc: 70.3%
+[Epoch:062] [100/400] | Loss: 1.787 | Ce: 2.030 | Entropy: 0.332 | GCC: 0.644 | Acc: 73.0%
+[Epoch:062] [200/400] | Loss: 1.782 | Ce: 2.000 | Entropy: 0.338 | GCC: 0.636 | Acc: 74.1%
+[Epoch:062] [300/400] | Loss: 1.752 | Ce: 1.948 | Entropy: 0.325 | GCC: 0.637 | Acc: 76.0%
+[Epoch:062] [400/400] | Loss: 1.742 | Ce: 1.927 | Entropy: 0.317 | GCC: 0.628 | Acc: 76.9%
+extracting......Extract Features: [1/302]	Time 3.244 (3.244)	Data 3.146 (3.146)	**Extract Features: [100/302]	Time 0.096 (0.141)	Data 0.000 (0.038)	**Extract Features: [200/302]	Time 0.107 (0.127)	Data 0.000 (0.025)	**Extract Features: [300/302]	Time 0.095 (0.127)	Data 0.000 (0.027)	**extracting done     
+Mean AP: 64.1%
+
+ * Finished epoch  62  model no.1 mAP: 64.1% best: 64.1% *
+2022-05-13 22:28:40.659217
+Cost 5:46:27.097805
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.161 (1.161)	Data 1.063 (1.063)	**Extract Features: [100/203]	Time 0.096 (0.109)	Data 0.000 (0.011)	**Extract Features: [200/203]	Time 0.096 (0.104)	Data 0.000 (0.006)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:063] [001/400] | Loss: 1.678 | Ce: 1.755 | Entropy: 0.144 | GCC: 0.901 | Acc: 87.5%
+[Epoch:063] [100/400] | Loss: 1.748 | Ce: 2.015 | Entropy: 0.341 | GCC: 0.603 | Acc: 74.0%
+[Epoch:063] [200/400] | Loss: 1.722 | Ce: 1.963 | Entropy: 0.333 | GCC: 0.596 | Acc: 75.4%
+[Epoch:063] [300/400] | Loss: 1.705 | Ce: 1.920 | Entropy: 0.318 | GCC: 0.605 | Acc: 77.0%
+[Epoch:063] [400/400] | Loss: 1.714 | Ce: 1.907 | Entropy: 0.313 | GCC: 0.611 | Acc: 77.4%
+extracting......Extract Features: [1/302]	Time 2.851 (2.851)	Data 2.745 (2.745)	**Extract Features: [100/302]	Time 0.098 (0.162)	Data 0.000 (0.061)	**Extract Features: [200/302]	Time 0.100 (0.154)	Data 0.001 (0.053)	**Extract Features: [300/302]	Time 0.096 (0.141)	Data 0.000 (0.039)	**extracting done     
+Mean AP: 64.4%
+
+ * Finished epoch  63  model no.1 mAP: 64.4% best: 64.4% *
+2022-05-13 22:34:33.689049
+Cost 5:52:20.127679
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 2.392 (2.392)	Data 2.293 (2.293)	**Extract Features: [100/203]	Time 0.125 (0.130)	Data 0.001 (0.024)	**Extract Features: [200/203]	Time 0.096 (0.119)	Data 0.000 (0.013)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:064] [001/400] | Loss: 1.929 | Ce: 2.103 | Entropy: 0.217 | GCC: 0.714 | Acc: 76.6%
+[Epoch:064] [100/400] | Loss: 1.734 | Ce: 1.992 | Entropy: 0.325 | GCC: 0.623 | Acc: 75.2%
+[Epoch:064] [200/400] | Loss: 1.730 | Ce: 1.957 | Entropy: 0.331 | GCC: 0.631 | Acc: 76.1%
+[Epoch:064] [300/400] | Loss: 1.719 | Ce: 1.930 | Entropy: 0.320 | GCC: 0.624 | Acc: 77.0%
+[Epoch:064] [400/400] | Loss: 1.724 | Ce: 1.917 | Entropy: 0.314 | GCC: 0.626 | Acc: 77.4%
+extracting......Extract Features: [1/302]	Time 1.306 (1.306)	Data 1.210 (1.210)	**Extract Features: [100/302]	Time 0.095 (0.107)	Data 0.000 (0.012)	**Extract Features: [200/302]	Time 0.096 (0.102)	Data 0.000 (0.006)	**Extract Features: [300/302]	Time 0.104 (0.109)	Data 0.000 (0.012)	**extracting done     
+Mean AP: 64.9%
+
+ * Finished epoch  64  model no.1 mAP: 64.9% best: 64.9% *
+2022-05-13 22:39:56.101294
+Cost 5:57:42.539895
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.939 (1.939)	Data 1.841 (1.841)	**Extract Features: [100/203]	Time 0.097 (0.120)	Data 0.000 (0.019)	**Extract Features: [200/203]	Time 0.095 (0.110)	Data 0.000 (0.011)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:065] [001/400] | Loss: 1.806 | Ce: 2.004 | Entropy: 0.209 | GCC: 0.752 | Acc: 76.6%
+[Epoch:065] [100/400] | Loss: 1.769 | Ce: 2.018 | Entropy: 0.346 | GCC: 0.649 | Acc: 73.6%
+[Epoch:065] [200/400] | Loss: 1.736 | Ce: 1.963 | Entropy: 0.340 | GCC: 0.632 | Acc: 75.4%
+[Epoch:065] [300/400] | Loss: 1.715 | Ce: 1.912 | Entropy: 0.322 | GCC: 0.638 | Acc: 77.0%
+[Epoch:065] [400/400] | Loss: 1.710 | Ce: 1.895 | Entropy: 0.313 | GCC: 0.635 | Acc: 77.7%
+extracting......Extract Features: [1/302]	Time 2.709 (2.709)	Data 2.604 (2.604)	**Extract Features: [100/302]	Time 0.102 (0.137)	Data 0.000 (0.037)	**Extract Features: [200/302]	Time 0.105 (0.125)	Data 0.009 (0.024)	**Extract Features: [300/302]	Time 0.094 (0.117)	Data 0.000 (0.018)	**extracting done     
+Mean AP: 65.2%
+
+ * Finished epoch  65  model no.1 mAP: 65.2% best: 65.2% *
+2022-05-13 22:45:34.329460
+Cost 6:03:20.768054
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 2.418 (2.418)	Data 2.313 (2.313)	**Extract Features: [100/203]	Time 0.120 (0.132)	Data 0.006 (0.025)	**Extract Features: [200/203]	Time 0.096 (0.118)	Data 0.000 (0.013)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:066] [001/400] | Loss: 1.812 | Ce: 1.886 | Entropy: 0.177 | GCC: 0.906 | Acc: 78.1%
+[Epoch:066] [100/400] | Loss: 1.747 | Ce: 1.992 | Entropy: 0.342 | GCC: 0.625 | Acc: 74.7%
+[Epoch:066] [200/400] | Loss: 1.764 | Ce: 1.989 | Entropy: 0.354 | GCC: 0.621 | Acc: 74.9%
+[Epoch:066] [300/400] | Loss: 1.728 | Ce: 1.928 | Entropy: 0.332 | GCC: 0.624 | Acc: 76.9%
+[Epoch:066] [400/400] | Loss: 1.708 | Ce: 1.899 | Entropy: 0.318 | GCC: 0.617 | Acc: 77.9%
+extracting......Extract Features: [1/302]	Time 3.994 (3.994)	Data 3.894 (3.894)	**Extract Features: [100/302]	Time 0.110 (0.147)	Data 0.000 (0.040)	**Extract Features: [200/302]	Time 0.096 (0.132)	Data 0.000 (0.027)	**Extract Features: [300/302]	Time 0.096 (0.129)	Data 0.000 (0.026)	**extracting done     
+Mean AP: 65.8%
+
+ * Finished epoch  66  model no.1 mAP: 65.8% best: 65.8% *
+2022-05-13 22:50:49.658700
+Cost 6:08:36.097349
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 2.436 (2.436)	Data 2.337 (2.337)	**Extract Features: [100/203]	Time 0.096 (0.118)	Data 0.000 (0.024)	**Extract Features: [200/203]	Time 0.095 (0.107)	Data 0.000 (0.012)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:067] [001/400] | Loss: 1.558 | Ce: 1.670 | Entropy: 0.212 | GCC: 0.636 | Acc: 85.9%
+[Epoch:067] [100/400] | Loss: 1.670 | Ce: 1.920 | Entropy: 0.321 | GCC: 0.606 | Acc: 77.4%
+[Epoch:067] [200/400] | Loss: 1.687 | Ce: 1.907 | Entropy: 0.336 | GCC: 0.617 | Acc: 77.8%
+[Epoch:067] [300/400] | Loss: 1.662 | Ce: 1.869 | Entropy: 0.320 | GCC: 0.607 | Acc: 78.9%
+[Epoch:067] [400/400] | Loss: 1.651 | Ce: 1.843 | Entropy: 0.307 | GCC: 0.605 | Acc: 79.7%
+extracting......Extract Features: [1/302]	Time 3.531 (3.531)	Data 3.423 (3.423)	**Extract Features: [100/302]	Time 0.096 (0.158)	Data 0.000 (0.057)	**Extract Features: [200/302]	Time 0.103 (0.139)	Data 0.000 (0.037)	**Extract Features: [300/302]	Time 0.097 (0.132)	Data 0.000 (0.030)	**extracting done     
+Mean AP: 65.9%
+
+ * Finished epoch  67  model no.1 mAP: 65.9% best: 65.9% *
+2022-05-13 22:57:25.263031
+Cost 6:15:11.701636
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 3.010 (3.010)	Data 2.894 (2.894)	**Extract Features: [100/203]	Time 0.105 (0.133)	Data 0.000 (0.030)	**Extract Features: [200/203]	Time 0.104 (0.118)	Data 0.000 (0.016)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:068] [001/400] | Loss: 2.404 | Ce: 2.428 | Entropy: 0.274 | GCC: 1.001 | Acc: 67.2%
+[Epoch:068] [100/400] | Loss: 1.700 | Ce: 1.975 | Entropy: 0.323 | GCC: 0.604 | Acc: 75.3%
+[Epoch:068] [200/400] | Loss: 1.691 | Ce: 1.930 | Entropy: 0.328 | GCC: 0.620 | Acc: 76.2%
+[Epoch:068] [300/400] | Loss: 1.667 | Ce: 1.889 | Entropy: 0.316 | GCC: 0.611 | Acc: 77.5%
+[Epoch:068] [400/400] | Loss: 1.661 | Ce: 1.867 | Entropy: 0.307 | GCC: 0.611 | Acc: 78.4%
+extracting......Extract Features: [1/302]	Time 2.993 (2.993)	Data 2.895 (2.895)	**Extract Features: [100/302]	Time 0.105 (0.155)	Data 0.000 (0.052)	**Extract Features: [200/302]	Time 0.096 (0.137)	Data 0.000 (0.036)	**Extract Features: [300/302]	Time 0.096 (0.127)	Data 0.000 (0.025)	**extracting done     
+Mean AP: 66.0%
+
+ * Finished epoch  68  model no.1 mAP: 66.0% best: 66.0% *
+2022-05-13 23:03:20.224824
+Cost 6:21:06.663415
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.195 (1.195)	Data 1.099 (1.099)	**Extract Features: [100/203]	Time 0.094 (0.105)	Data 0.000 (0.011)	**Extract Features: [200/203]	Time 0.096 (0.100)	Data 0.000 (0.006)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:069] [001/400] | Loss: 1.688 | Ce: 1.767 | Entropy: 0.200 | GCC: 0.807 | Acc: 84.4%
+[Epoch:069] [100/400] | Loss: 1.740 | Ce: 1.993 | Entropy: 0.340 | GCC: 0.621 | Acc: 74.5%
+[Epoch:069] [200/400] | Loss: 1.707 | Ce: 1.938 | Entropy: 0.336 | GCC: 0.616 | Acc: 76.4%
+[Epoch:069] [300/400] | Loss: 1.693 | Ce: 1.901 | Entropy: 0.320 | GCC: 0.615 | Acc: 77.7%
+[Epoch:069] [400/400] | Loss: 1.673 | Ce: 1.866 | Entropy: 0.308 | GCC: 0.613 | Acc: 78.8%
+extracting......Extract Features: [1/302]	Time 2.891 (2.891)	Data 2.793 (2.793)	**Extract Features: [100/302]	Time 0.101 (0.133)	Data 0.000 (0.030)	**Extract Features: [200/302]	Time 0.109 (0.119)	Data 0.000 (0.018)	**Extract Features: [300/302]	Time 0.096 (0.120)	Data 0.000 (0.019)	**extracting done     
+Mean AP: 66.4%
+
+ * Finished epoch  69  model no.1 mAP: 66.4% best: 66.4% *
+2022-05-13 23:08:29.111003
+Cost 6:26:15.549613
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 2.553 (2.553)	Data 2.449 (2.449)	**Extract Features: [100/203]	Time 0.099 (0.128)	Data 0.002 (0.025)	**Extract Features: [200/203]	Time 0.105 (0.117)	Data 0.000 (0.013)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:070] [001/400] | Loss: 1.829 | Ce: 2.283 | Entropy: 0.245 | GCC: 0.482 | Acc: 79.7%
+[Epoch:070] [100/400] | Loss: 1.696 | Ce: 1.978 | Entropy: 0.329 | GCC: 0.587 | Acc: 75.8%
+[Epoch:070] [200/400] | Loss: 1.693 | Ce: 1.935 | Entropy: 0.335 | GCC: 0.604 | Acc: 76.4%
+[Epoch:070] [300/400] | Loss: 1.658 | Ce: 1.889 | Entropy: 0.318 | GCC: 0.592 | Acc: 78.0%
+[Epoch:070] [400/400] | Loss: 1.656 | Ce: 1.870 | Entropy: 0.307 | GCC: 0.598 | Acc: 78.5%
+extracting......Extract Features: [1/302]	Time 1.238 (1.238)	Data 1.141 (1.141)	**Extract Features: [100/302]	Time 0.095 (0.108)	Data 0.000 (0.012)	**Extract Features: [200/302]	Time 0.095 (0.103)	Data 0.000 (0.006)	**Extract Features: [300/302]	Time 0.108 (0.101)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 66.5%
+
+ * Finished epoch  70  model no.1 mAP: 66.5% best: 66.5% *
+2022-05-13 23:13:52.328906
+Cost 6:31:38.767499
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.255 (1.255)	Data 1.157 (1.157)	**Extract Features: [100/203]	Time 0.095 (0.107)	Data 0.000 (0.012)	**Extract Features: [200/203]	Time 0.094 (0.101)	Data 0.000 (0.006)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:071] [001/400] | Loss: 1.207 | Ce: 1.386 | Entropy: 0.082 | GCC: 0.626 | Acc: 96.9%
+[Epoch:071] [100/400] | Loss: 1.687 | Ce: 1.951 | Entropy: 0.328 | GCC: 0.596 | Acc: 76.3%
+[Epoch:071] [200/400] | Loss: 1.696 | Ce: 1.930 | Entropy: 0.344 | GCC: 0.595 | Acc: 76.9%
+[Epoch:071] [300/400] | Loss: 1.681 | Ce: 1.899 | Entropy: 0.328 | GCC: 0.588 | Acc: 78.0%
+[Epoch:071] [400/400] | Loss: 1.668 | Ce: 1.866 | Entropy: 0.316 | GCC: 0.590 | Acc: 79.0%
+extracting......Extract Features: [1/302]	Time 1.843 (1.843)	Data 1.745 (1.745)	**Extract Features: [100/302]	Time 0.096 (0.122)	Data 0.000 (0.019)	**Extract Features: [200/302]	Time 0.097 (0.113)	Data 0.000 (0.012)	**Extract Features: [300/302]	Time 0.096 (0.108)	Data 0.000 (0.008)	**extracting done     
+Mean AP: 66.8%
+
+ * Finished epoch  71  model no.1 mAP: 66.8% best: 66.8% *
+2022-05-13 23:18:29.591324
+Cost 6:36:16.029942
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.033 (1.033)	Data 0.936 (0.936)	**Extract Features: [100/203]	Time 0.095 (0.105)	Data 0.000 (0.010)	**Extract Features: [200/203]	Time 0.094 (0.100)	Data 0.000 (0.005)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:072] [001/400] | Loss: 2.229 | Ce: 2.294 | Entropy: 0.287 | GCC: 0.935 | Acc: 59.4%
+[Epoch:072] [100/400] | Loss: 1.995 | Ce: 2.274 | Entropy: 0.378 | GCC: 0.642 | Acc: 66.4%
+[Epoch:072] [200/400] | Loss: 2.001 | Ce: 2.240 | Entropy: 0.379 | GCC: 0.653 | Acc: 67.4%
+[Epoch:072] [300/400] | Loss: 1.981 | Ce: 2.191 | Entropy: 0.362 | GCC: 0.646 | Acc: 69.1%
+[Epoch:072] [400/400] | Loss: 1.961 | Ce: 2.155 | Entropy: 0.350 | GCC: 0.640 | Acc: 70.3%
+extracting......Extract Features: [1/302]	Time 1.554 (1.554)	Data 1.453 (1.453)	**Extract Features: [100/302]	Time 0.095 (0.111)	Data 0.000 (0.015)	**Extract Features: [200/302]	Time 0.094 (0.103)	Data 0.000 (0.008)	**Extract Features: [300/302]	Time 0.095 (0.100)	Data 0.000 (0.005)	**extracting done     
+Mean AP: 67.7%
+
+ * Finished epoch  72  model no.1 mAP: 67.7% best: 67.7% *
+2022-05-13 23:23:32.324106
+Cost 6:41:18.762696
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.134 (1.134)	Data 1.037 (1.037)	**Extract Features: [100/203]	Time 0.098 (0.105)	Data 0.000 (0.011)	**Extract Features: [200/203]	Time 0.096 (0.100)	Data 0.000 (0.005)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:073] [001/400] | Loss: 1.418 | Ce: 1.788 | Entropy: 0.220 | GCC: 0.426 | Acc: 84.4%
+[Epoch:073] [100/400] | Loss: 1.723 | Ce: 1.996 | Entropy: 0.337 | GCC: 0.596 | Acc: 74.6%
+[Epoch:073] [200/400] | Loss: 1.687 | Ce: 1.948 | Entropy: 0.335 | GCC: 0.567 | Acc: 76.2%
+[Epoch:073] [300/400] | Loss: 1.687 | Ce: 1.921 | Entropy: 0.325 | GCC: 0.571 | Acc: 77.2%
+[Epoch:073] [400/400] | Loss: 1.674 | Ce: 1.884 | Entropy: 0.313 | GCC: 0.578 | Acc: 78.6%
+extracting......Extract Features: [1/302]	Time 1.368 (1.368)	Data 1.271 (1.271)	**Extract Features: [100/302]	Time 0.094 (0.107)	Data 0.000 (0.013)	**Extract Features: [200/302]	Time 0.095 (0.102)	Data 0.000 (0.007)	**Extract Features: [300/302]	Time 0.096 (0.099)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 67.7%
+
+ * Finished epoch  73  model no.1 mAP: 67.7% best: 67.7%
+2022-05-13 23:29:21.159450
+Cost 6:47:07.598041
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.030 (1.030)	Data 0.934 (0.934)	**Extract Features: [100/203]	Time 0.094 (0.107)	Data 0.000 (0.012)	**Extract Features: [200/203]	Time 0.094 (0.101)	Data 0.000 (0.006)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:074] [001/400] | Loss: 1.675 | Ce: 1.911 | Entropy: 0.197 | GCC: 0.724 | Acc: 73.4%
+[Epoch:074] [100/400] | Loss: 1.691 | Ce: 1.930 | Entropy: 0.326 | GCC: 0.622 | Acc: 77.0%
+[Epoch:074] [200/400] | Loss: 1.681 | Ce: 1.894 | Entropy: 0.331 | GCC: 0.629 | Acc: 78.0%
+[Epoch:074] [300/400] | Loss: 1.660 | Ce: 1.856 | Entropy: 0.318 | GCC: 0.622 | Acc: 79.2%
+[Epoch:074] [400/400] | Loss: 1.644 | Ce: 1.832 | Entropy: 0.306 | GCC: 0.615 | Acc: 79.9%
+extracting......Extract Features: [1/302]	Time 1.514 (1.514)	Data 1.417 (1.417)	**Extract Features: [100/302]	Time 0.094 (0.109)	Data 0.000 (0.014)	**Extract Features: [200/302]	Time 0.095 (0.102)	Data 0.000 (0.007)	**Extract Features: [300/302]	Time 0.095 (0.100)	Data 0.000 (0.005)	**extracting done     
+Mean AP: 67.9%
+
+ * Finished epoch  74  model no.1 mAP: 67.9% best: 67.9% *
+2022-05-13 23:34:00.824501
+Cost 6:51:47.263093
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.007 (1.007)	Data 0.910 (0.910)	**Extract Features: [100/203]	Time 0.094 (0.104)	Data 0.000 (0.009)	**Extract Features: [200/203]	Time 0.094 (0.099)	Data 0.000 (0.005)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:075] [001/400] | Loss: 1.576 | Ce: 2.053 | Entropy: 0.194 | GCC: 0.295 | Acc: 71.9%
+[Epoch:075] [100/400] | Loss: 1.702 | Ce: 1.968 | Entropy: 0.332 | GCC: 0.595 | Acc: 75.4%
+[Epoch:075] [200/400] | Loss: 1.690 | Ce: 1.930 | Entropy: 0.332 | GCC: 0.600 | Acc: 76.6%
+[Epoch:075] [300/400] | Loss: 1.676 | Ce: 1.897 | Entropy: 0.318 | GCC: 0.597 | Acc: 77.7%
+[Epoch:075] [400/400] | Loss: 1.658 | Ce: 1.864 | Entropy: 0.307 | GCC: 0.598 | Acc: 78.6%
+extracting......Extract Features: [1/302]	Time 1.987 (1.987)	Data 1.890 (1.890)	**Extract Features: [100/302]	Time 0.094 (0.114)	Data 0.000 (0.019)	**Extract Features: [200/302]	Time 0.096 (0.105)	Data 0.000 (0.010)	**Extract Features: [300/302]	Time 0.094 (0.101)	Data 0.000 (0.007)	**extracting done     
+Mean AP: 68.5%
+
+ * Finished epoch  75  model no.1 mAP: 68.5% best: 68.5% *
+2022-05-13 23:38:38.291463
+Cost 6:56:24.730077
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.228 (1.228)	Data 1.130 (1.130)	**Extract Features: [100/203]	Time 0.095 (0.106)	Data 0.000 (0.012)	**Extract Features: [200/203]	Time 0.094 (0.101)	Data 0.000 (0.006)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:076] [001/400] | Loss: 1.594 | Ce: 1.707 | Entropy: 0.149 | GCC: 0.913 | Acc: 87.5%
+[Epoch:076] [100/400] | Loss: 1.598 | Ce: 1.874 | Entropy: 0.313 | GCC: 0.570 | Acc: 78.0%
+[Epoch:076] [200/400] | Loss: 1.628 | Ce: 1.887 | Entropy: 0.328 | GCC: 0.567 | Acc: 77.7%
+[Epoch:076] [300/400] | Loss: 1.616 | Ce: 1.857 | Entropy: 0.318 | GCC: 0.561 | Acc: 78.7%
+[Epoch:076] [400/400] | Loss: 1.612 | Ce: 1.832 | Entropy: 0.308 | GCC: 0.570 | Acc: 79.6%
+extracting......Extract Features: [1/302]	Time 3.051 (3.051)	Data 2.929 (2.929)	**Extract Features: [100/302]	Time 0.099 (0.142)	Data 0.001 (0.038)	**Extract Features: [200/302]	Time 0.096 (0.129)	Data 0.000 (0.022)	**Extract Features: [300/302]	Time 0.096 (0.121)	Data 0.000 (0.015)	**extracting done     
+Mean AP: 68.7%
+
+ * Finished epoch  76  model no.1 mAP: 68.7% best: 68.7% *
+2022-05-13 23:43:29.848547
+Cost 7:01:16.287142
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.097 (1.097)	Data 1.000 (1.000)	**Extract Features: [100/203]	Time 0.094 (0.105)	Data 0.000 (0.010)	**Extract Features: [200/203]	Time 0.094 (0.100)	Data 0.000 (0.005)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:077] [001/400] | Loss: 1.971 | Ce: 2.123 | Entropy: 0.329 | GCC: 0.290 | Acc: 65.6%
+[Epoch:077] [100/400] | Loss: 1.667 | Ce: 1.952 | Entropy: 0.328 | GCC: 0.572 | Acc: 76.0%
+[Epoch:077] [200/400] | Loss: 1.664 | Ce: 1.919 | Entropy: 0.328 | GCC: 0.583 | Acc: 76.6%
+[Epoch:077] [300/400] | Loss: 1.652 | Ce: 1.891 | Entropy: 0.317 | GCC: 0.577 | Acc: 77.7%
+[Epoch:077] [400/400] | Loss: 1.652 | Ce: 1.870 | Entropy: 0.311 | GCC: 0.585 | Acc: 78.2%
+extracting......Extract Features: [1/302]	Time 1.062 (1.062)	Data 0.965 (0.965)	**Extract Features: [100/302]	Time 0.096 (0.104)	Data 0.000 (0.010)	**Extract Features: [200/302]	Time 0.095 (0.100)	Data 0.000 (0.005)	**Extract Features: [300/302]	Time 0.104 (0.098)	Data 0.000 (0.003)	**extracting done     
+Mean AP: 68.5%
+
+ * Finished epoch  77  model no.1 mAP: 68.5% best: 68.7%
+2022-05-13 23:49:04.066626
+Cost 7:06:50.505361
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 3.754 (3.754)	Data 3.644 (3.644)	**Extract Features: [100/203]	Time 0.101 (0.142)	Data 0.002 (0.039)	**Extract Features: [200/203]	Time 0.096 (0.127)	Data 0.000 (0.021)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:078] [001/400] | Loss: 1.670 | Ce: 1.867 | Entropy: 0.242 | GCC: 0.544 | Acc: 78.1%
+[Epoch:078] [100/400] | Loss: 1.632 | Ce: 1.899 | Entropy: 0.323 | GCC: 0.579 | Acc: 77.3%
+[Epoch:078] [200/400] | Loss: 1.631 | Ce: 1.871 | Entropy: 0.332 | GCC: 0.574 | Acc: 78.5%
+[Epoch:078] [300/400] | Loss: 1.622 | Ce: 1.842 | Entropy: 0.318 | GCC: 0.586 | Acc: 79.4%
+[Epoch:078] [400/400] | Loss: 1.604 | Ce: 1.811 | Entropy: 0.305 | GCC: 0.584 | Acc: 80.4%
+extracting......Extract Features: [1/302]	Time 1.235 (1.235)	Data 1.137 (1.137)	**Extract Features: [100/302]	Time 0.097 (0.106)	Data 0.000 (0.012)	**Extract Features: [200/302]	Time 0.095 (0.101)	Data 0.000 (0.006)	**Extract Features: [300/302]	Time 0.096 (0.100)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 68.6%
+
+ * Finished epoch  78  model no.1 mAP: 68.6% best: 68.7%
+2022-05-13 23:54:01.386327
+Cost 7:11:47.824945
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 2.296 (2.296)	Data 2.179 (2.179)	**Extract Features: [100/203]	Time 0.104 (0.124)	Data 0.000 (0.024)	**Extract Features: [200/203]	Time 0.094 (0.111)	Data 0.000 (0.012)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:079] [001/400] | Loss: 1.780 | Ce: 1.943 | Entropy: 0.150 | GCC: 0.989 | Acc: 73.4%
+[Epoch:079] [100/400] | Loss: 1.685 | Ce: 1.948 | Entropy: 0.342 | GCC: 0.580 | Acc: 76.0%
+[Epoch:079] [200/400] | Loss: 1.651 | Ce: 1.888 | Entropy: 0.331 | GCC: 0.587 | Acc: 77.5%
+[Epoch:079] [300/400] | Loss: 1.640 | Ce: 1.861 | Entropy: 0.317 | GCC: 0.583 | Acc: 78.6%
+[Epoch:079] [400/400] | Loss: 1.630 | Ce: 1.836 | Entropy: 0.307 | GCC: 0.580 | Acc: 79.5%
+extracting......Extract Features: [1/302]	Time 1.502 (1.502)	Data 1.405 (1.405)	**Extract Features: [100/302]	Time 0.095 (0.109)	Data 0.000 (0.014)	**Extract Features: [200/302]	Time 0.096 (0.103)	Data 0.000 (0.007)	**Extract Features: [300/302]	Time 0.094 (0.100)	Data 0.000 (0.005)	**extracting done     
+Mean AP: 68.5%
+
+ * Finished epoch  79  model no.1 mAP: 68.5% best: 68.7%
+2022-05-13 23:59:37.189608
+Cost 7:17:23.628196
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 0.984 (0.984)	Data 0.886 (0.886)	**Extract Features: [100/203]	Time 0.095 (0.104)	Data 0.000 (0.009)	**Extract Features: [200/203]	Time 0.095 (0.100)	Data 0.000 (0.005)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:080] [001/400] | Loss: 1.678 | Ce: 1.997 | Entropy: 0.232 | GCC: 0.515 | Acc: 71.9%
+[Epoch:080] [100/400] | Loss: 1.640 | Ce: 1.897 | Entropy: 0.321 | GCC: 0.584 | Acc: 76.9%
+[Epoch:080] [200/400] | Loss: 1.634 | Ce: 1.864 | Entropy: 0.323 | GCC: 0.591 | Acc: 78.1%
+[Epoch:080] [300/400] | Loss: 1.621 | Ce: 1.842 | Entropy: 0.315 | GCC: 0.573 | Acc: 79.0%
+[Epoch:080] [400/400] | Loss: 1.619 | Ce: 1.820 | Entropy: 0.304 | GCC: 0.582 | Acc: 79.9%
+extracting......Extract Features: [1/302]	Time 1.158 (1.158)	Data 1.058 (1.058)	**Extract Features: [100/302]	Time 0.094 (0.105)	Data 0.000 (0.011)	**Extract Features: [200/302]	Time 0.095 (0.100)	Data 0.000 (0.006)	**Extract Features: [300/302]	Time 0.094 (0.098)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 69.4%
+
+ * Finished epoch  80  model no.1 mAP: 69.4% best: 69.4% *
+2022-05-14 00:04:19.833570
+Cost 7:22:06.272164
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.478 (1.478)	Data 1.381 (1.381)	**Extract Features: [100/203]	Time 0.095 (0.108)	Data 0.000 (0.014)	**Extract Features: [200/203]	Time 0.094 (0.102)	Data 0.000 (0.007)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:081] [001/400] | Loss: 1.604 | Ce: 1.807 | Entropy: 0.175 | GCC: 0.541 | Acc: 76.6%
+[Epoch:081] [100/400] | Loss: 1.682 | Ce: 1.938 | Entropy: 0.330 | GCC: 0.605 | Acc: 75.6%
+[Epoch:081] [200/400] | Loss: 1.680 | Ce: 1.915 | Entropy: 0.339 | GCC: 0.597 | Acc: 76.5%
+[Epoch:081] [300/400] | Loss: 1.656 | Ce: 1.872 | Entropy: 0.322 | GCC: 0.598 | Acc: 77.8%
+[Epoch:081] [400/400] | Loss: 1.641 | Ce: 1.841 | Entropy: 0.310 | GCC: 0.597 | Acc: 78.9%
+extracting......Extract Features: [1/302]	Time 1.254 (1.254)	Data 1.158 (1.158)	**Extract Features: [100/302]	Time 0.094 (0.106)	Data 0.000 (0.012)	**Extract Features: [200/302]	Time 0.181 (0.101)	Data 0.000 (0.006)	**Extract Features: [300/302]	Time 0.094 (0.099)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 69.4%
+
+ * Finished epoch  81  model no.1 mAP: 69.4% best: 69.4%
+2022-05-14 00:09:05.406372
+Cost 7:26:51.844963
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.533 (1.533)	Data 1.436 (1.436)	**Extract Features: [100/203]	Time 0.094 (0.109)	Data 0.000 (0.015)	**Extract Features: [200/203]	Time 0.094 (0.102)	Data 0.000 (0.007)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:082] [001/400] | Loss: 1.781 | Ce: 1.977 | Entropy: 0.265 | GCC: 0.585 | Acc: 81.2%
+[Epoch:082] [100/400] | Loss: 1.623 | Ce: 1.895 | Entropy: 0.315 | GCC: 0.558 | Acc: 78.2%
+[Epoch:082] [200/400] | Loss: 1.637 | Ce: 1.871 | Entropy: 0.325 | GCC: 0.581 | Acc: 78.7%
+[Epoch:082] [300/400] | Loss: 1.614 | Ce: 1.838 | Entropy: 0.311 | GCC: 0.575 | Acc: 79.6%
+[Epoch:082] [400/400] | Loss: 1.605 | Ce: 1.816 | Entropy: 0.301 | GCC: 0.573 | Acc: 80.3%
+extracting......Extract Features: [1/302]	Time 1.262 (1.262)	Data 1.165 (1.165)	**Extract Features: [100/302]	Time 0.099 (0.107)	Data 0.000 (0.012)	**Extract Features: [200/302]	Time 0.094 (0.101)	Data 0.000 (0.006)	**Extract Features: [300/302]	Time 0.094 (0.099)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 69.3%
+
+ * Finished epoch  82  model no.1 mAP: 69.3% best: 69.4%
+2022-05-14 00:14:05.927833
+Cost 7:31:52.366433
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.016 (1.016)	Data 0.920 (0.920)	**Extract Features: [100/203]	Time 0.095 (0.104)	Data 0.000 (0.009)	**Extract Features: [200/203]	Time 0.095 (0.099)	Data 0.000 (0.005)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:083] [001/400] | Loss: 1.966 | Ce: 2.222 | Entropy: 0.279 | GCC: 0.592 | Acc: 75.0%
+[Epoch:083] [100/400] | Loss: 1.664 | Ce: 1.911 | Entropy: 0.319 | GCC: 0.614 | Acc: 76.3%
+[Epoch:083] [200/400] | Loss: 1.655 | Ce: 1.875 | Entropy: 0.326 | GCC: 0.616 | Acc: 77.5%
+[Epoch:083] [300/400] | Loss: 1.646 | Ce: 1.851 | Entropy: 0.314 | GCC: 0.611 | Acc: 78.6%
+[Epoch:083] [400/400] | Loss: 1.642 | Ce: 1.828 | Entropy: 0.306 | GCC: 0.619 | Acc: 79.5%
+extracting......Extract Features: [1/302]	Time 1.148 (1.148)	Data 1.051 (1.051)	**Extract Features: [100/302]	Time 0.094 (0.105)	Data 0.000 (0.011)	**Extract Features: [200/302]	Time 0.095 (0.100)	Data 0.000 (0.005)	**Extract Features: [300/302]	Time 0.094 (0.098)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 69.6%
+
+ * Finished epoch  83  model no.1 mAP: 69.6% best: 69.6% *
+2022-05-14 00:18:49.654085
+Cost 7:36:36.092675
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 0.930 (0.930)	Data 0.834 (0.834)	**Extract Features: [100/203]	Time 0.095 (0.103)	Data 0.000 (0.009)	**Extract Features: [200/203]	Time 0.095 (0.099)	Data 0.000 (0.004)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:084] [001/400] | Loss: 1.585 | Ce: 1.735 | Entropy: 0.170 | GCC: 0.813 | Acc: 82.8%
+[Epoch:084] [100/400] | Loss: 1.619 | Ce: 1.890 | Entropy: 0.332 | GCC: 0.570 | Acc: 77.5%
+[Epoch:084] [200/400] | Loss: 1.645 | Ce: 1.891 | Entropy: 0.335 | GCC: 0.582 | Acc: 77.6%
+[Epoch:084] [300/400] | Loss: 1.631 | Ce: 1.857 | Entropy: 0.322 | GCC: 0.581 | Acc: 78.8%
+[Epoch:084] [400/400] | Loss: 1.617 | Ce: 1.826 | Entropy: 0.309 | GCC: 0.582 | Acc: 79.9%
+extracting......Extract Features: [1/302]	Time 1.152 (1.152)	Data 1.056 (1.056)	**Extract Features: [100/302]	Time 0.094 (0.105)	Data 0.000 (0.011)	**Extract Features: [200/302]	Time 0.094 (0.100)	Data 0.000 (0.005)	**Extract Features: [300/302]	Time 0.095 (0.099)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 70.1%
+
+ * Finished epoch  84  model no.1 mAP: 70.1% best: 70.1% *
+2022-05-14 00:23:53.820338
+Cost 7:41:40.258930
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 0.933 (0.933)	Data 0.837 (0.837)	**Extract Features: [100/203]	Time 0.094 (0.103)	Data 0.000 (0.009)	**Extract Features: [200/203]	Time 0.094 (0.099)	Data 0.000 (0.004)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:085] [001/400] | Loss: 1.405 | Ce: 1.687 | Entropy: 0.200 | GCC: 0.492 | Acc: 87.5%
+[Epoch:085] [100/400] | Loss: 1.643 | Ce: 1.894 | Entropy: 0.326 | GCC: 0.599 | Acc: 77.7%
+[Epoch:085] [200/400] | Loss: 1.624 | Ce: 1.864 | Entropy: 0.329 | GCC: 0.590 | Acc: 78.3%
+[Epoch:085] [300/400] | Loss: 1.606 | Ce: 1.827 | Entropy: 0.314 | GCC: 0.591 | Acc: 79.6%
+[Epoch:085] [400/400] | Loss: 1.604 | Ce: 1.812 | Entropy: 0.305 | GCC: 0.583 | Acc: 80.2%
+extracting......Extract Features: [1/302]	Time 1.256 (1.256)	Data 1.159 (1.159)	**Extract Features: [100/302]	Time 0.098 (0.106)	Data 0.000 (0.012)	**Extract Features: [200/302]	Time 0.094 (0.101)	Data 0.000 (0.006)	**Extract Features: [300/302]	Time 0.096 (0.099)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 70.0%
+
+ * Finished epoch  85  model no.1 mAP: 70.0% best: 70.1%
+2022-05-14 00:28:17.816324
+Cost 7:46:04.254916
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.056 (1.056)	Data 0.959 (0.959)	**Extract Features: [100/203]	Time 0.095 (0.104)	Data 0.000 (0.010)	**Extract Features: [200/203]	Time 0.094 (0.100)	Data 0.000 (0.005)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:086] [001/400] | Loss: 1.850 | Ce: 1.835 | Entropy: 0.227 | GCC: 0.820 | Acc: 75.0%
+[Epoch:086] [100/400] | Loss: 1.665 | Ce: 1.919 | Entropy: 0.317 | GCC: 0.598 | Acc: 77.0%
+[Epoch:086] [200/400] | Loss: 1.647 | Ce: 1.866 | Entropy: 0.317 | GCC: 0.615 | Acc: 78.6%
+[Epoch:086] [300/400] | Loss: 1.622 | Ce: 1.823 | Entropy: 0.306 | GCC: 0.616 | Acc: 80.0%
+[Epoch:086] [400/400] | Loss: 1.619 | Ce: 1.806 | Entropy: 0.301 | GCC: 0.614 | Acc: 80.5%
+extracting......Extract Features: [1/302]	Time 1.236 (1.236)	Data 1.140 (1.140)	**Extract Features: [100/302]	Time 0.097 (0.106)	Data 0.000 (0.012)	**Extract Features: [200/302]	Time 0.094 (0.100)	Data 0.000 (0.006)	**Extract Features: [300/302]	Time 0.094 (0.099)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 70.3%
+
+ * Finished epoch  86  model no.1 mAP: 70.3% best: 70.3% *
+2022-05-14 00:32:39.458280
+Cost 7:50:25.896872
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 0.993 (0.993)	Data 0.895 (0.895)	**Extract Features: [100/203]	Time 0.094 (0.103)	Data 0.000 (0.009)	**Extract Features: [200/203]	Time 0.094 (0.099)	Data 0.000 (0.005)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:087] [001/400] | Loss: 1.647 | Ce: 2.011 | Entropy: 0.204 | GCC: 0.364 | Acc: 79.7%
+[Epoch:087] [100/400] | Loss: 1.578 | Ce: 1.838 | Entropy: 0.311 | GCC: 0.566 | Acc: 79.3%
+[Epoch:087] [200/400] | Loss: 1.595 | Ce: 1.833 | Entropy: 0.322 | GCC: 0.572 | Acc: 79.4%
+[Epoch:087] [300/400] | Loss: 1.590 | Ce: 1.815 | Entropy: 0.313 | GCC: 0.566 | Acc: 80.1%
+[Epoch:087] [400/400] | Loss: 1.579 | Ce: 1.784 | Entropy: 0.298 | GCC: 0.576 | Acc: 81.2%
+extracting......Extract Features: [1/302]	Time 1.259 (1.259)	Data 1.162 (1.162)	**Extract Features: [100/302]	Time 0.095 (0.107)	Data 0.000 (0.012)	**Extract Features: [200/302]	Time 0.098 (0.101)	Data 0.000 (0.006)	**Extract Features: [300/302]	Time 0.094 (0.099)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 70.2%
+
+ * Finished epoch  87  model no.1 mAP: 70.2% best: 70.3%
+2022-05-14 00:37:02.889280
+Cost 7:54:49.327867
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.182 (1.182)	Data 1.086 (1.086)	**Extract Features: [100/203]	Time 0.095 (0.106)	Data 0.000 (0.011)	**Extract Features: [200/203]	Time 0.095 (0.101)	Data 0.000 (0.006)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:088] [001/400] | Loss: 1.705 | Ce: 1.743 | Entropy: 0.158 | GCC: 0.892 | Acc: 85.9%
+[Epoch:088] [100/400] | Loss: 1.623 | Ce: 1.875 | Entropy: 0.318 | GCC: 0.572 | Acc: 77.9%
+[Epoch:088] [200/400] | Loss: 1.613 | Ce: 1.859 | Entropy: 0.326 | GCC: 0.561 | Acc: 78.3%
+[Epoch:088] [300/400] | Loss: 1.604 | Ce: 1.825 | Entropy: 0.315 | GCC: 0.570 | Acc: 79.6%
+[Epoch:088] [400/400] | Loss: 1.598 | Ce: 1.806 | Entropy: 0.307 | GCC: 0.566 | Acc: 80.3%
+extracting......Extract Features: [1/302]	Time 2.504 (2.504)	Data 2.404 (2.404)	**Extract Features: [100/302]	Time 0.107 (0.138)	Data 0.000 (0.035)	**Extract Features: [200/302]	Time 0.095 (0.120)	Data 0.000 (0.019)	**Extract Features: [300/302]	Time 0.095 (0.113)	Data 0.000 (0.013)	**extracting done     
+Mean AP: 70.9%
+
+ * Finished epoch  88  model no.1 mAP: 70.9% best: 70.9% *
+2022-05-14 00:41:38.168582
+Cost 7:59:24.607173
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.128 (1.128)	Data 1.031 (1.031)	**Extract Features: [100/203]	Time 0.095 (0.105)	Data 0.000 (0.011)	**Extract Features: [200/203]	Time 0.094 (0.100)	Data 0.000 (0.005)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:089] [001/400] | Loss: 1.843 | Ce: 1.767 | Entropy: 0.190 | GCC: 0.967 | Acc: 87.5%
+[Epoch:089] [100/400] | Loss: 1.896 | Ce: 2.177 | Entropy: 0.360 | GCC: 0.615 | Acc: 69.4%
+[Epoch:089] [200/400] | Loss: 1.890 | Ce: 2.137 | Entropy: 0.366 | GCC: 0.603 | Acc: 70.6%
+[Epoch:089] [300/400] | Loss: 1.871 | Ce: 2.071 | Entropy: 0.349 | GCC: 0.625 | Acc: 72.9%
+[Epoch:089] [400/400] | Loss: 1.844 | Ce: 2.029 | Entropy: 0.336 | GCC: 0.616 | Acc: 73.9%
+extracting......Extract Features: [1/302]	Time 2.406 (2.406)	Data 2.301 (2.301)	**Extract Features: [100/302]	Time 0.104 (0.132)	Data 0.001 (0.028)	**Extract Features: [200/302]	Time 0.097 (0.120)	Data 0.000 (0.016)	**Extract Features: [300/302]	Time 0.094 (0.113)	Data 0.000 (0.011)	**extracting done     
+Mean AP: 71.0%
+
+ * Finished epoch  89  model no.1 mAP: 71.0% best: 71.0% *
+2022-05-14 00:45:56.379592
+Cost 8:03:42.818189
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.613 (1.613)	Data 1.516 (1.516)	**Extract Features: [100/203]	Time 0.095 (0.110)	Data 0.000 (0.015)	**Extract Features: [200/203]	Time 0.094 (0.103)	Data 0.000 (0.008)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:090] [001/400] | Loss: 1.839 | Ce: 2.029 | Entropy: 0.205 | GCC: 0.885 | Acc: 78.1%
+[Epoch:090] [100/400] | Loss: 1.610 | Ce: 1.884 | Entropy: 0.321 | GCC: 0.552 | Acc: 77.4%
+[Epoch:090] [200/400] | Loss: 1.602 | Ce: 1.861 | Entropy: 0.326 | GCC: 0.533 | Acc: 78.3%
+[Epoch:090] [300/400] | Loss: 1.589 | Ce: 1.823 | Entropy: 0.312 | GCC: 0.546 | Acc: 79.5%
+[Epoch:090] [400/400] | Loss: 1.578 | Ce: 1.803 | Entropy: 0.302 | GCC: 0.541 | Acc: 80.4%
+extracting......Extract Features: [1/302]	Time 3.198 (3.198)	Data 3.088 (3.088)	**Extract Features: [100/302]	Time 0.099 (0.136)	Data 0.000 (0.033)	**Extract Features: [200/302]	Time 0.096 (0.121)	Data 0.000 (0.017)	**Extract Features: [300/302]	Time 0.112 (0.118)	Data 0.000 (0.013)	**extracting done     
+Mean AP: 71.7%
+
+ * Finished epoch  90  model no.1 mAP: 71.7% best: 71.7% *
+2022-05-14 00:50:30.939086
+Cost 8:08:17.377719
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 2.395 (2.395)	Data 2.296 (2.296)	**Extract Features: [100/203]	Time 0.095 (0.118)	Data 0.000 (0.023)	**Extract Features: [200/203]	Time 0.094 (0.107)	Data 0.000 (0.012)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:091] [001/400] | Loss: 1.788 | Ce: 1.817 | Entropy: 0.210 | GCC: 0.667 | Acc: 85.9%
+[Epoch:091] [100/400] | Loss: 1.605 | Ce: 1.862 | Entropy: 0.321 | GCC: 0.581 | Acc: 78.9%
+[Epoch:091] [200/400] | Loss: 1.588 | Ce: 1.834 | Entropy: 0.322 | GCC: 0.564 | Acc: 79.5%
+[Epoch:091] [300/400] | Loss: 1.587 | Ce: 1.805 | Entropy: 0.309 | GCC: 0.576 | Acc: 80.4%
+[Epoch:091] [400/400] | Loss: 1.575 | Ce: 1.777 | Entropy: 0.299 | GCC: 0.580 | Acc: 81.5%
+extracting......Extract Features: [1/302]	Time 1.247 (1.247)	Data 1.148 (1.148)	**Extract Features: [100/302]	Time 0.094 (0.106)	Data 0.000 (0.012)	**Extract Features: [200/302]	Time 0.186 (0.116)	Data 0.002 (0.018)	**Extract Features: [300/302]	Time 0.097 (0.118)	Data 0.000 (0.017)	**extracting done     
+Mean AP: 71.9%
+
+ * Finished epoch  91  model no.1 mAP: 71.9% best: 71.9% *
+2022-05-14 00:55:25.580431
+Cost 8:13:12.019023
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.059 (1.059)	Data 0.963 (0.963)	**Extract Features: [100/203]	Time 0.094 (0.104)	Data 0.000 (0.010)	**Extract Features: [200/203]	Time 0.094 (0.100)	Data 0.000 (0.005)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:092] [001/400] | Loss: 1.643 | Ce: 1.853 | Entropy: 0.216 | GCC: 0.447 | Acc: 81.2%
+[Epoch:092] [100/400] | Loss: 1.599 | Ce: 1.868 | Entropy: 0.332 | GCC: 0.551 | Acc: 79.1%
+[Epoch:092] [200/400] | Loss: 1.582 | Ce: 1.824 | Entropy: 0.326 | GCC: 0.555 | Acc: 80.3%
+[Epoch:092] [300/400] | Loss: 1.562 | Ce: 1.786 | Entropy: 0.310 | GCC: 0.553 | Acc: 81.4%
+[Epoch:092] [400/400] | Loss: 1.562 | Ce: 1.769 | Entropy: 0.299 | GCC: 0.560 | Acc: 81.9%
+extracting......Extract Features: [1/302]	Time 1.140 (1.140)	Data 1.043 (1.043)	**Extract Features: [100/302]	Time 0.100 (0.120)	Data 0.002 (0.012)	**Extract Features: [200/302]	Time 0.134 (0.120)	Data 0.000 (0.014)	**Extract Features: [300/302]	Time 0.105 (0.119)	Data 0.000 (0.012)	**extracting done     
+Mean AP: 71.6%
+
+ * Finished epoch  92  model no.1 mAP: 71.6% best: 71.9%
+2022-05-14 01:00:11.748841
+Cost 8:17:58.187475
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 3.260 (3.260)	Data 3.152 (3.152)	**Extract Features: [100/203]	Time 0.105 (0.142)	Data 0.002 (0.034)	**Extract Features: [200/203]	Time 0.094 (0.121)	Data 0.000 (0.018)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:093] [001/400] | Loss: 1.310 | Ce: 1.784 | Entropy: 0.142 | GCC: 0.326 | Acc: 89.1%
+[Epoch:093] [100/400] | Loss: 1.551 | Ce: 1.809 | Entropy: 0.319 | GCC: 0.559 | Acc: 80.6%
+[Epoch:093] [200/400] | Loss: 1.565 | Ce: 1.805 | Entropy: 0.318 | GCC: 0.569 | Acc: 80.6%
+[Epoch:093] [300/400] | Loss: 1.556 | Ce: 1.780 | Entropy: 0.307 | GCC: 0.560 | Acc: 81.5%
+[Epoch:093] [400/400] | Loss: 1.549 | Ce: 1.753 | Entropy: 0.297 | GCC: 0.562 | Acc: 82.5%
+extracting......Extract Features: [1/302]	Time 1.211 (1.211)	Data 1.114 (1.114)	**Extract Features: [100/302]	Time 0.095 (0.106)	Data 0.000 (0.011)	**Extract Features: [200/302]	Time 0.096 (0.101)	Data 0.000 (0.006)	**Extract Features: [300/302]	Time 0.106 (0.102)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 72.2%
+
+ * Finished epoch  93  model no.1 mAP: 72.2% best: 72.2% *
+2022-05-14 01:04:54.388369
+Cost 8:22:40.827070
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 3.254 (3.254)	Data 3.155 (3.155)	**Extract Features: [100/203]	Time 0.123 (0.144)	Data 0.000 (0.035)	**Extract Features: [200/203]	Time 0.096 (0.126)	Data 0.000 (0.018)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:094] [001/400] | Loss: 1.251 | Ce: 1.643 | Entropy: 0.118 | GCC: 0.455 | Acc: 90.6%
+[Epoch:094] [100/400] | Loss: 1.589 | Ce: 1.858 | Entropy: 0.317 | GCC: 0.579 | Acc: 79.1%
+[Epoch:094] [200/400] | Loss: 1.568 | Ce: 1.815 | Entropy: 0.319 | GCC: 0.576 | Acc: 80.5%
+[Epoch:094] [300/400] | Loss: 1.564 | Ce: 1.790 | Entropy: 0.309 | GCC: 0.571 | Acc: 81.3%
+[Epoch:094] [400/400] | Loss: 1.556 | Ce: 1.766 | Entropy: 0.298 | GCC: 0.575 | Acc: 81.9%
+extracting......Extract Features: [1/302]	Time 1.163 (1.163)	Data 1.066 (1.066)	**Extract Features: [100/302]	Time 0.095 (0.105)	Data 0.000 (0.011)	**Extract Features: [200/302]	Time 0.094 (0.100)	Data 0.000 (0.006)	**Extract Features: [300/302]	Time 0.096 (0.099)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 72.3%
+
+ * Finished epoch  94  model no.1 mAP: 72.3% best: 72.3% *
+2022-05-14 01:09:27.942463
+Cost 8:27:14.381148
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 3.235 (3.235)	Data 3.137 (3.137)	**Extract Features: [100/203]	Time 0.121 (0.137)	Data 0.001 (0.033)	**Extract Features: [200/203]	Time 0.134 (0.123)	Data 0.000 (0.017)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:095] [001/400] | Loss: 1.595 | Ce: 1.928 | Entropy: 0.211 | GCC: 0.538 | Acc: 81.2%
+[Epoch:095] [100/400] | Loss: 1.599 | Ce: 1.883 | Entropy: 0.314 | GCC: 0.570 | Acc: 77.8%
+[Epoch:095] [200/400] | Loss: 1.596 | Ce: 1.851 | Entropy: 0.323 | GCC: 0.564 | Acc: 79.1%
+[Epoch:095] [300/400] | Loss: 1.580 | Ce: 1.817 | Entropy: 0.310 | GCC: 0.563 | Acc: 80.0%
+[Epoch:095] [400/400] | Loss: 1.574 | Ce: 1.798 | Entropy: 0.304 | GCC: 0.559 | Acc: 80.6%
+extracting......Extract Features: [1/302]	Time 1.282 (1.282)	Data 1.184 (1.184)	**Extract Features: [100/302]	Time 0.094 (0.107)	Data 0.000 (0.012)	**Extract Features: [200/302]	Time 0.094 (0.101)	Data 0.000 (0.006)	**Extract Features: [300/302]	Time 0.094 (0.099)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 72.2%
+
+ * Finished epoch  95  model no.1 mAP: 72.2% best: 72.3%
+2022-05-14 01:13:50.931649
+Cost 8:31:37.370249
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.048 (1.048)	Data 0.951 (0.951)	**Extract Features: [100/203]	Time 0.106 (0.114)	Data 0.002 (0.011)	**Extract Features: [200/203]	Time 0.096 (0.110)	Data 0.000 (0.006)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:096] [001/400] | Loss: 1.591 | Ce: 1.786 | Entropy: 0.141 | GCC: 0.796 | Acc: 81.2%
+[Epoch:096] [100/400] | Loss: 1.614 | Ce: 1.889 | Entropy: 0.332 | GCC: 0.575 | Acc: 76.6%
+[Epoch:096] [200/400] | Loss: 1.586 | Ce: 1.853 | Entropy: 0.326 | GCC: 0.552 | Acc: 78.6%
+[Epoch:096] [300/400] | Loss: 1.565 | Ce: 1.806 | Entropy: 0.311 | GCC: 0.557 | Acc: 80.5%
+[Epoch:096] [400/400] | Loss: 1.563 | Ce: 1.782 | Entropy: 0.303 | GCC: 0.564 | Acc: 81.3%
+extracting......Extract Features: [1/302]	Time 1.207 (1.207)	Data 1.111 (1.111)	**Extract Features: [100/302]	Time 0.094 (0.106)	Data 0.000 (0.011)	**Extract Features: [200/302]	Time 0.094 (0.100)	Data 0.000 (0.006)	**Extract Features: [300/302]	Time 0.094 (0.098)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 72.4%
+
+ * Finished epoch  96  model no.1 mAP: 72.4% best: 72.4% *
+2022-05-14 01:18:26.078352
+Cost 8:36:12.516942
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.118 (1.118)	Data 1.022 (1.022)	**Extract Features: [100/203]	Time 0.095 (0.105)	Data 0.000 (0.010)	**Extract Features: [200/203]	Time 0.102 (0.103)	Data 0.000 (0.007)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:097] [001/400] | Loss: 1.571 | Ce: 1.636 | Entropy: 0.165 | GCC: 0.911 | Acc: 85.9%
+[Epoch:097] [100/400] | Loss: 1.594 | Ce: 1.868 | Entropy: 0.324 | GCC: 0.572 | Acc: 77.7%
+[Epoch:097] [200/400] | Loss: 1.583 | Ce: 1.840 | Entropy: 0.331 | GCC: 0.551 | Acc: 78.9%
+[Epoch:097] [300/400] | Loss: 1.583 | Ce: 1.815 | Entropy: 0.320 | GCC: 0.563 | Acc: 79.7%
+[Epoch:097] [400/400] | Loss: 1.567 | Ce: 1.789 | Entropy: 0.307 | GCC: 0.559 | Acc: 80.9%
+extracting......Extract Features: [1/302]	Time 1.207 (1.207)	Data 1.110 (1.110)	**Extract Features: [100/302]	Time 0.095 (0.106)	Data 0.000 (0.011)	**Extract Features: [200/302]	Time 0.094 (0.101)	Data 0.000 (0.006)	**Extract Features: [300/302]	Time 0.094 (0.099)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 72.3%
+
+ * Finished epoch  97  model no.1 mAP: 72.3% best: 72.4%
+2022-05-14 01:23:13.326522
+Cost 8:40:59.765110
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.069 (1.069)	Data 0.972 (0.972)	**Extract Features: [100/203]	Time 0.156 (0.106)	Data 0.001 (0.010)	**Extract Features: [200/203]	Time 0.104 (0.106)	Data 0.000 (0.006)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:098] [001/400] | Loss: 1.331 | Ce: 1.555 | Entropy: 0.132 | GCC: 0.666 | Acc: 92.2%
+[Epoch:098] [100/400] | Loss: 1.617 | Ce: 1.875 | Entropy: 0.332 | GCC: 0.579 | Acc: 77.8%
+[Epoch:098] [200/400] | Loss: 1.613 | Ce: 1.845 | Entropy: 0.330 | GCC: 0.580 | Acc: 79.1%
+[Epoch:098] [300/400] | Loss: 1.596 | Ce: 1.807 | Entropy: 0.318 | GCC: 0.582 | Acc: 80.2%
+[Epoch:098] [400/400] | Loss: 1.580 | Ce: 1.781 | Entropy: 0.309 | GCC: 0.580 | Acc: 80.9%
+extracting......Extract Features: [1/302]	Time 1.294 (1.294)	Data 1.197 (1.197)	**Extract Features: [100/302]	Time 0.095 (0.107)	Data 0.000 (0.012)	**Extract Features: [200/302]	Time 0.095 (0.101)	Data 0.000 (0.006)	**Extract Features: [300/302]	Time 0.094 (0.099)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 72.6%
+
+ * Finished epoch  98  model no.1 mAP: 72.6% best: 72.6% *
+2022-05-14 01:28:05.197748
+Cost 8:45:51.636357
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 2.962 (2.962)	Data 2.862 (2.862)	**Extract Features: [100/203]	Time 0.128 (0.132)	Data 0.003 (0.029)	**Extract Features: [200/203]	Time 0.096 (0.118)	Data 0.000 (0.015)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:099] [001/400] | Loss: 1.556 | Ce: 1.861 | Entropy: 0.217 | GCC: 0.288 | Acc: 76.6%
+[Epoch:099] [100/400] | Loss: 1.586 | Ce: 1.860 | Entropy: 0.325 | GCC: 0.565 | Acc: 78.5%
+[Epoch:099] [200/400] | Loss: 1.580 | Ce: 1.830 | Entropy: 0.331 | GCC: 0.569 | Acc: 79.3%
+[Epoch:099] [300/400] | Loss: 1.570 | Ce: 1.800 | Entropy: 0.318 | GCC: 0.575 | Acc: 80.4%
+[Epoch:099] [400/400] | Loss: 1.555 | Ce: 1.770 | Entropy: 0.306 | GCC: 0.573 | Acc: 81.6%
+extracting......Extract Features: [1/302]	Time 1.230 (1.230)	Data 1.134 (1.134)	**Extract Features: [100/302]	Time 0.096 (0.106)	Data 0.000 (0.012)	**Extract Features: [200/302]	Time 0.096 (0.101)	Data 0.000 (0.006)	**Extract Features: [300/302]	Time 0.094 (0.099)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 72.6%
+
+ * Finished epoch  99  model no.1 mAP: 72.6% best: 72.6%
+2022-05-14 01:32:45.380426
+Cost 8:50:31.819021
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.358 (1.358)	Data 1.262 (1.262)	**Extract Features: [100/203]	Time 0.095 (0.108)	Data 0.000 (0.013)	**Extract Features: [200/203]	Time 0.096 (0.101)	Data 0.000 (0.007)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:100] [001/400] | Loss: 1.335 | Ce: 1.602 | Entropy: 0.199 | GCC: 0.364 | Acc: 89.1%
+[Epoch:100] [100/400] | Loss: 1.602 | Ce: 1.866 | Entropy: 0.326 | GCC: 0.589 | Acc: 78.1%
+[Epoch:100] [200/400] | Loss: 1.586 | Ce: 1.837 | Entropy: 0.324 | GCC: 0.575 | Acc: 79.4%
+[Epoch:100] [300/400] | Loss: 1.564 | Ce: 1.797 | Entropy: 0.310 | GCC: 0.570 | Acc: 80.8%
+[Epoch:100] [400/400] | Loss: 1.557 | Ce: 1.775 | Entropy: 0.302 | GCC: 0.570 | Acc: 81.5%
+extracting......Extract Features: [1/302]	Time 1.191 (1.191)	Data 1.094 (1.094)	**Extract Features: [100/302]	Time 0.095 (0.106)	Data 0.000 (0.011)	**Extract Features: [200/302]	Time 0.094 (0.100)	Data 0.000 (0.006)	**Extract Features: [300/302]	Time 0.094 (0.098)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 72.4%
+
+ * Finished epoch 100  model no.1 mAP: 72.4% best: 72.6%
+2022-05-14 01:37:45.591059
+Cost 8:55:32.029651
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.088 (1.088)	Data 0.991 (0.991)	**Extract Features: [100/203]	Time 0.105 (0.107)	Data 0.002 (0.010)	**Extract Features: [200/203]	Time 0.096 (0.106)	Data 0.000 (0.006)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:101] [001/400] | Loss: 1.361 | Ce: 1.558 | Entropy: 0.128 | GCC: 0.621 | Acc: 87.5%
+[Epoch:101] [100/400] | Loss: 1.551 | Ce: 1.810 | Entropy: 0.318 | GCC: 0.578 | Acc: 79.8%
+[Epoch:101] [200/400] | Loss: 1.575 | Ce: 1.811 | Entropy: 0.327 | GCC: 0.578 | Acc: 80.3%
+[Epoch:101] [300/400] | Loss: 1.584 | Ce: 1.809 | Entropy: 0.318 | GCC: 0.575 | Acc: 80.2%
+[Epoch:101] [400/400] | Loss: 1.575 | Ce: 1.785 | Entropy: 0.310 | GCC: 0.577 | Acc: 81.0%
+extracting......Extract Features: [1/302]	Time 1.264 (1.264)	Data 1.167 (1.167)	**Extract Features: [100/302]	Time 0.095 (0.107)	Data 0.000 (0.012)	**Extract Features: [200/302]	Time 0.095 (0.101)	Data 0.000 (0.006)	**Extract Features: [300/302]	Time 0.094 (0.099)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 72.8%
+
+ * Finished epoch 101  model no.1 mAP: 72.8% best: 72.8% *
+2022-05-14 01:42:32.781663
+Cost 9:00:19.220253
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.599 (1.599)	Data 1.502 (1.502)	**Extract Features: [100/203]	Time 0.097 (0.110)	Data 0.000 (0.015)	**Extract Features: [200/203]	Time 0.096 (0.104)	Data 0.000 (0.008)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:102] [001/400] | Loss: 1.704 | Ce: 1.951 | Entropy: 0.220 | GCC: 0.572 | Acc: 78.1%
+[Epoch:102] [100/400] | Loss: 1.618 | Ce: 1.883 | Entropy: 0.331 | GCC: 0.570 | Acc: 77.4%
+[Epoch:102] [200/400] | Loss: 1.588 | Ce: 1.836 | Entropy: 0.329 | GCC: 0.555 | Acc: 79.1%
+[Epoch:102] [300/400] | Loss: 1.566 | Ce: 1.799 | Entropy: 0.311 | GCC: 0.553 | Acc: 80.6%
+[Epoch:102] [400/400] | Loss: 1.557 | Ce: 1.776 | Entropy: 0.300 | GCC: 0.558 | Acc: 81.4%
+extracting......Extract Features: [1/302]	Time 1.184 (1.184)	Data 1.088 (1.088)	**Extract Features: [100/302]	Time 0.095 (0.106)	Data 0.000 (0.011)	**Extract Features: [200/302]	Time 0.094 (0.100)	Data 0.000 (0.006)	**Extract Features: [300/302]	Time 0.094 (0.099)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 72.9%
+
+ * Finished epoch 102  model no.1 mAP: 72.9% best: 72.9% *
+2022-05-14 01:47:11.389755
+Cost 9:04:57.828348
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.178 (1.178)	Data 1.082 (1.082)	**Extract Features: [100/203]	Time 0.097 (0.105)	Data 0.000 (0.011)	**Extract Features: [200/203]	Time 0.094 (0.101)	Data 0.000 (0.006)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:103] [001/400] | Loss: 1.840 | Ce: 1.995 | Entropy: 0.288 | GCC: 0.522 | Acc: 76.6%
+[Epoch:103] [100/400] | Loss: 1.562 | Ce: 1.820 | Entropy: 0.308 | GCC: 0.563 | Acc: 79.8%
+[Epoch:103] [200/400] | Loss: 1.548 | Ce: 1.796 | Entropy: 0.312 | GCC: 0.559 | Acc: 80.7%
+[Epoch:103] [300/400] | Loss: 1.542 | Ce: 1.770 | Entropy: 0.304 | GCC: 0.567 | Acc: 81.6%
+[Epoch:103] [400/400] | Loss: 1.538 | Ce: 1.755 | Entropy: 0.297 | GCC: 0.561 | Acc: 82.1%
+extracting......Extract Features: [1/302]	Time 1.552 (1.552)	Data 1.455 (1.455)	**Extract Features: [100/302]	Time 0.095 (0.110)	Data 0.000 (0.015)	**Extract Features: [200/302]	Time 0.095 (0.103)	Data 0.000 (0.008)	**Extract Features: [300/302]	Time 0.095 (0.100)	Data 0.000 (0.005)	**extracting done     
+Mean AP: 73.0%
+
+ * Finished epoch 103  model no.1 mAP: 73.0% best: 73.0% *
+2022-05-14 01:52:12.221996
+Cost 9:09:58.660597
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.148 (1.148)	Data 1.052 (1.052)	**Extract Features: [100/203]	Time 0.095 (0.107)	Data 0.000 (0.011)	**Extract Features: [200/203]	Time 0.096 (0.103)	Data 0.000 (0.006)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:104] [001/400] | Loss: 1.602 | Ce: 1.936 | Entropy: 0.227 | GCC: 0.418 | Acc: 75.0%
+[Epoch:104] [100/400] | Loss: 1.588 | Ce: 1.860 | Entropy: 0.326 | GCC: 0.567 | Acc: 78.6%
+[Epoch:104] [200/400] | Loss: 1.567 | Ce: 1.819 | Entropy: 0.323 | GCC: 0.561 | Acc: 79.9%
+[Epoch:104] [300/400] | Loss: 1.569 | Ce: 1.798 | Entropy: 0.316 | GCC: 0.567 | Acc: 80.5%
+[Epoch:104] [400/400] | Loss: 1.557 | Ce: 1.771 | Entropy: 0.304 | GCC: 0.573 | Acc: 81.5%
+extracting......Extract Features: [1/302]	Time 7.255 (7.255)	Data 7.158 (7.158)	**Extract Features: [100/302]	Time 0.094 (0.523)	Data 0.000 (0.429)	**Extract Features: [200/302]	Time 0.096 (0.334)	Data 0.000 (0.239)	**Extract Features: [300/302]	Time 0.095 (0.254)	Data 0.000 (0.159)	**extracting done     
+Mean AP: 72.5%
+
+ * Finished epoch 104  model no.1 mAP: 72.5% best: 73.0%
+2022-05-14 01:57:55.642967
+Cost 9:15:42.081560
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.859 (1.859)	Data 1.760 (1.760)	**Extract Features: [100/203]	Time 0.095 (0.222)	Data 0.000 (0.125)	**Extract Features: [200/203]	Time 0.094 (0.206)	Data 0.000 (0.109)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:105] [001/400] | Loss: 1.578 | Ce: 1.696 | Entropy: 0.130 | GCC: 0.850 | Acc: 87.5%
+[Epoch:105] [100/400] | Loss: 1.598 | Ce: 1.858 | Entropy: 0.333 | GCC: 0.563 | Acc: 78.8%
+[Epoch:105] [200/400] | Loss: 1.592 | Ce: 1.839 | Entropy: 0.328 | GCC: 0.553 | Acc: 79.5%
+[Epoch:105] [300/400] | Loss: 1.575 | Ce: 1.800 | Entropy: 0.317 | GCC: 0.561 | Acc: 80.7%
+[Epoch:105] [400/400] | Loss: 1.563 | Ce: 1.775 | Entropy: 0.305 | GCC: 0.559 | Acc: 81.5%
+extracting......Extract Features: [1/302]	Time 1.177 (1.177)	Data 1.080 (1.080)	**Extract Features: [100/302]	Time 0.095 (0.106)	Data 0.000 (0.011)	**Extract Features: [200/302]	Time 0.094 (0.101)	Data 0.000 (0.006)	**Extract Features: [300/302]	Time 0.095 (0.099)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 73.1%
+
+ * Finished epoch 105  model no.1 mAP: 73.1% best: 73.1% *
+2022-05-14 02:03:12.048552
+Cost 9:20:58.487148
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.236 (1.236)	Data 1.140 (1.140)	**Extract Features: [100/203]	Time 0.096 (0.107)	Data 0.000 (0.012)	**Extract Features: [200/203]	Time 0.096 (0.101)	Data 0.000 (0.006)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:106] [001/400] | Loss: 1.679 | Ce: 1.782 | Entropy: 0.145 | GCC: 0.852 | Acc: 76.6%
+[Epoch:106] [100/400] | Loss: 1.576 | Ce: 1.847 | Entropy: 0.318 | GCC: 0.561 | Acc: 78.3%
+[Epoch:106] [200/400] | Loss: 1.569 | Ce: 1.815 | Entropy: 0.327 | GCC: 0.567 | Acc: 79.2%
+[Epoch:106] [300/400] | Loss: 1.565 | Ce: 1.791 | Entropy: 0.315 | GCC: 0.566 | Acc: 80.0%
+[Epoch:106] [400/400] | Loss: 1.549 | Ce: 1.762 | Entropy: 0.304 | GCC: 0.564 | Acc: 81.1%
+extracting......Extract Features: [1/302]	Time 1.333 (1.333)	Data 1.234 (1.234)	**Extract Features: [100/302]	Time 0.095 (0.108)	Data 0.000 (0.013)	**Extract Features: [200/302]	Time 0.095 (0.102)	Data 0.000 (0.006)	**Extract Features: [300/302]	Time 0.095 (0.099)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 73.3%
+
+ * Finished epoch 106  model no.1 mAP: 73.3% best: 73.3% *
+2022-05-14 02:08:09.986017
+Cost 9:25:56.424610
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.672 (1.672)	Data 1.576 (1.576)	**Extract Features: [100/203]	Time 0.095 (0.112)	Data 0.000 (0.016)	**Extract Features: [200/203]	Time 0.096 (0.103)	Data 0.000 (0.008)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:107] [001/400] | Loss: 1.476 | Ce: 1.935 | Entropy: 0.220 | GCC: 0.327 | Acc: 79.7%
+[Epoch:107] [100/400] | Loss: 1.584 | Ce: 1.852 | Entropy: 0.328 | GCC: 0.567 | Acc: 79.3%
+[Epoch:107] [200/400] | Loss: 1.578 | Ce: 1.825 | Entropy: 0.333 | GCC: 0.567 | Acc: 80.1%
+[Epoch:107] [300/400] | Loss: 1.572 | Ce: 1.787 | Entropy: 0.319 | GCC: 0.578 | Acc: 81.5%
+[Epoch:107] [400/400] | Loss: 1.561 | Ce: 1.763 | Entropy: 0.307 | GCC: 0.580 | Acc: 82.2%
+extracting......Extract Features: [1/302]	Time 1.293 (1.293)	Data 1.197 (1.197)	**Extract Features: [100/302]	Time 0.096 (0.108)	Data 0.000 (0.012)	**Extract Features: [200/302]	Time 0.095 (0.102)	Data 0.000 (0.006)	**Extract Features: [300/302]	Time 0.096 (0.100)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 73.6%
+
+ * Finished epoch 107  model no.1 mAP: 73.6% best: 73.6% *
+2022-05-14 02:12:53.710882
+Cost 9:30:40.149472
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.139 (1.139)	Data 1.042 (1.042)	**Extract Features: [100/203]	Time 0.095 (0.106)	Data 0.000 (0.011)	**Extract Features: [200/203]	Time 0.094 (0.100)	Data 0.000 (0.005)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:108] [001/400] | Loss: 1.629 | Ce: 1.832 | Entropy: 0.185 | GCC: 0.714 | Acc: 81.2%
+[Epoch:108] [100/400] | Loss: 1.624 | Ce: 1.870 | Entropy: 0.322 | GCC: 0.595 | Acc: 77.4%
+[Epoch:108] [200/400] | Loss: 1.602 | Ce: 1.827 | Entropy: 0.324 | GCC: 0.587 | Acc: 79.3%
+[Epoch:108] [300/400] | Loss: 1.576 | Ce: 1.788 | Entropy: 0.310 | GCC: 0.576 | Acc: 80.8%
+[Epoch:108] [400/400] | Loss: 1.582 | Ce: 1.774 | Entropy: 0.304 | GCC: 0.581 | Acc: 81.3%
+extracting......Extract Features: [1/302]	Time 1.241 (1.241)	Data 1.143 (1.143)	**Extract Features: [100/302]	Time 0.095 (0.106)	Data 0.000 (0.012)	**Extract Features: [200/302]	Time 0.095 (0.101)	Data 0.000 (0.006)	**Extract Features: [300/302]	Time 0.094 (0.099)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 73.3%
+
+ * Finished epoch 108  model no.1 mAP: 73.3% best: 73.6%
+2022-05-14 02:18:01.145710
+Cost 9:35:47.584302
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 0.956 (0.956)	Data 0.858 (0.858)	**Extract Features: [100/203]	Time 0.096 (0.104)	Data 0.000 (0.009)	**Extract Features: [200/203]	Time 0.096 (0.100)	Data 0.000 (0.005)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:109] [001/400] | Loss: 1.652 | Ce: 1.720 | Entropy: 0.112 | GCC: 1.087 | Acc: 84.4%
+[Epoch:109] [100/400] | Loss: 1.569 | Ce: 1.843 | Entropy: 0.316 | GCC: 0.561 | Acc: 79.3%
+[Epoch:109] [200/400] | Loss: 1.581 | Ce: 1.827 | Entropy: 0.333 | GCC: 0.569 | Acc: 79.6%
+[Epoch:109] [300/400] | Loss: 1.573 | Ce: 1.790 | Entropy: 0.319 | GCC: 0.574 | Acc: 80.9%
+[Epoch:109] [400/400] | Loss: 1.549 | Ce: 1.759 | Entropy: 0.303 | GCC: 0.567 | Acc: 81.9%
+extracting......Extract Features: [1/302]	Time 1.328 (1.328)	Data 1.232 (1.232)	**Extract Features: [100/302]	Time 0.095 (0.107)	Data 0.000 (0.013)	**Extract Features: [200/302]	Time 0.095 (0.101)	Data 0.000 (0.006)	**Extract Features: [300/302]	Time 0.094 (0.099)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 73.3%
+
+ * Finished epoch 109  model no.1 mAP: 73.3% best: 73.6%
+2022-05-14 02:22:57.157992
+Cost 9:40:43.596581
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.235 (1.235)	Data 1.138 (1.138)	**Extract Features: [100/203]	Time 0.096 (0.107)	Data 0.000 (0.012)	**Extract Features: [200/203]	Time 0.097 (0.103)	Data 0.000 (0.006)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:110] [001/400] | Loss: 1.585 | Ce: 1.896 | Entropy: 0.169 | GCC: 0.480 | Acc: 81.2%
+[Epoch:110] [100/400] | Loss: 1.520 | Ce: 1.792 | Entropy: 0.320 | GCC: 0.538 | Acc: 80.4%
+[Epoch:110] [200/400] | Loss: 1.538 | Ce: 1.781 | Entropy: 0.326 | GCC: 0.556 | Acc: 80.6%
+[Epoch:110] [300/400] | Loss: 1.522 | Ce: 1.754 | Entropy: 0.311 | GCC: 0.546 | Acc: 81.6%
+[Epoch:110] [400/400] | Loss: 1.512 | Ce: 1.726 | Entropy: 0.297 | GCC: 0.554 | Acc: 82.6%
+extracting......Extract Features: [1/302]	Time 1.257 (1.257)	Data 1.160 (1.160)	**Extract Features: [100/302]	Time 0.095 (0.111)	Data 0.000 (0.016)	**Extract Features: [200/302]	Time 0.095 (0.103)	Data 0.000 (0.008)	**Extract Features: [300/302]	Time 0.095 (0.100)	Data 0.000 (0.005)	**extracting done     
+Mean AP: 73.4%
+
+ * Finished epoch 110  model no.1 mAP: 73.4% best: 73.6%
+2022-05-14 02:27:30.730320
+Cost 9:45:17.168909
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.201 (1.201)	Data 1.104 (1.104)	**Extract Features: [100/203]	Time 0.095 (0.107)	Data 0.000 (0.011)	**Extract Features: [200/203]	Time 0.096 (0.102)	Data 0.000 (0.006)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:111] [001/400] | Loss: 1.770 | Ce: 1.726 | Entropy: 0.229 | GCC: 0.745 | Acc: 87.5%
+[Epoch:111] [100/400] | Loss: 1.567 | Ce: 1.828 | Entropy: 0.319 | GCC: 0.573 | Acc: 79.0%
+[Epoch:111] [200/400] | Loss: 1.587 | Ce: 1.820 | Entropy: 0.328 | GCC: 0.581 | Acc: 79.2%
+[Epoch:111] [300/400] | Loss: 1.579 | Ce: 1.801 | Entropy: 0.319 | GCC: 0.569 | Acc: 80.2%
+[Epoch:111] [400/400] | Loss: 1.557 | Ce: 1.763 | Entropy: 0.304 | GCC: 0.574 | Acc: 81.5%
+extracting......Extract Features: [1/302]	Time 1.215 (1.215)	Data 1.118 (1.118)	**Extract Features: [100/302]	Time 0.095 (0.106)	Data 0.000 (0.011)	**Extract Features: [200/302]	Time 0.094 (0.100)	Data 0.000 (0.006)	**Extract Features: [300/302]	Time 0.096 (0.098)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 73.8%
+
+ * Finished epoch 111  model no.1 mAP: 73.8% best: 73.8% *
+2022-05-14 02:32:10.615698
+Cost 9:49:57.054290
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.152 (1.152)	Data 1.056 (1.056)	**Extract Features: [100/203]	Time 0.096 (0.107)	Data 0.000 (0.011)	**Extract Features: [200/203]	Time 0.095 (0.101)	Data 0.000 (0.006)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:112] [001/400] | Loss: 1.371 | Ce: 1.769 | Entropy: 0.221 | GCC: 0.288 | Acc: 84.4%
+[Epoch:112] [100/400] | Loss: 1.548 | Ce: 1.810 | Entropy: 0.310 | GCC: 0.570 | Acc: 80.6%
+[Epoch:112] [200/400] | Loss: 1.575 | Ce: 1.810 | Entropy: 0.318 | GCC: 0.578 | Acc: 80.7%
+[Epoch:112] [300/400] | Loss: 1.555 | Ce: 1.773 | Entropy: 0.306 | GCC: 0.578 | Acc: 81.7%
+[Epoch:112] [400/400] | Loss: 1.536 | Ce: 1.739 | Entropy: 0.293 | GCC: 0.582 | Acc: 82.7%
+extracting......Extract Features: [1/302]	Time 1.243 (1.243)	Data 1.144 (1.144)	**Extract Features: [100/302]	Time 0.095 (0.107)	Data 0.000 (0.012)	**Extract Features: [200/302]	Time 0.095 (0.101)	Data 0.000 (0.006)	**Extract Features: [300/302]	Time 0.096 (0.099)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 73.8%
+
+ * Finished epoch 112  model no.1 mAP: 73.8% best: 73.8% *
+2022-05-14 02:36:58.866524
+Cost 9:54:45.305139
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.066 (1.066)	Data 0.970 (0.970)	**Extract Features: [100/203]	Time 0.096 (0.106)	Data 0.000 (0.010)	**Extract Features: [200/203]	Time 0.095 (0.100)	Data 0.000 (0.005)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:113] [001/400] | Loss: 1.447 | Ce: 1.702 | Entropy: 0.196 | GCC: 0.374 | Acc: 89.1%
+[Epoch:113] [100/400] | Loss: 1.553 | Ce: 1.819 | Entropy: 0.314 | GCC: 0.552 | Acc: 80.3%
+[Epoch:113] [200/400] | Loss: 1.529 | Ce: 1.769 | Entropy: 0.311 | GCC: 0.556 | Acc: 81.8%
+[Epoch:113] [300/400] | Loss: 1.530 | Ce: 1.750 | Entropy: 0.302 | GCC: 0.562 | Acc: 82.4%
+[Epoch:113] [400/400] | Loss: 1.522 | Ce: 1.730 | Entropy: 0.296 | GCC: 0.560 | Acc: 83.1%
+extracting......Extract Features: [1/302]	Time 1.239 (1.239)	Data 1.143 (1.143)	**Extract Features: [100/302]	Time 0.095 (0.106)	Data 0.000 (0.012)	**Extract Features: [200/302]	Time 0.095 (0.101)	Data 0.000 (0.006)	**Extract Features: [300/302]	Time 0.095 (0.099)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 73.9%
+
+ * Finished epoch 113  model no.1 mAP: 73.9% best: 73.9% *
+2022-05-14 02:41:57.092697
+Cost 9:59:43.531288
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.157 (1.157)	Data 1.061 (1.061)	**Extract Features: [100/203]	Time 0.095 (0.106)	Data 0.000 (0.011)	**Extract Features: [200/203]	Time 0.097 (0.101)	Data 0.000 (0.006)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:114] [001/400] | Loss: 1.586 | Ce: 1.688 | Entropy: 0.183 | GCC: 0.765 | Acc: 85.9%
+[Epoch:114] [100/400] | Loss: 1.534 | Ce: 1.813 | Entropy: 0.321 | GCC: 0.551 | Acc: 80.3%
+[Epoch:114] [200/400] | Loss: 1.551 | Ce: 1.791 | Entropy: 0.329 | GCC: 0.565 | Acc: 80.5%
+[Epoch:114] [300/400] | Loss: 1.533 | Ce: 1.756 | Entropy: 0.314 | GCC: 0.563 | Acc: 81.5%
+[Epoch:114] [400/400] | Loss: 1.525 | Ce: 1.738 | Entropy: 0.304 | GCC: 0.564 | Acc: 82.1%
+extracting......Extract Features: [1/302]	Time 1.302 (1.302)	Data 1.205 (1.205)	**Extract Features: [100/302]	Time 0.095 (0.107)	Data 0.000 (0.012)	**Extract Features: [200/302]	Time 0.095 (0.101)	Data 0.000 (0.006)	**Extract Features: [300/302]	Time 0.095 (0.099)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 74.3%
+
+ * Finished epoch 114  model no.1 mAP: 74.3% best: 74.3% *
+2022-05-14 02:46:51.066510
+Cost 10:04:37.505100
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.029 (1.029)	Data 0.931 (0.931)	**Extract Features: [100/203]	Time 0.095 (0.104)	Data 0.000 (0.010)	**Extract Features: [200/203]	Time 0.097 (0.102)	Data 0.000 (0.005)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:115] [001/400] | Loss: 1.897 | Ce: 1.978 | Entropy: 0.279 | GCC: 0.723 | Acc: 75.0%
+[Epoch:115] [100/400] | Loss: 1.796 | Ce: 2.119 | Entropy: 0.372 | GCC: 0.550 | Acc: 69.5%
+[Epoch:115] [200/400] | Loss: 1.780 | Ce: 2.057 | Entropy: 0.364 | GCC: 0.562 | Acc: 72.1%
+[Epoch:115] [300/400] | Loss: 1.763 | Ce: 2.004 | Entropy: 0.347 | GCC: 0.568 | Acc: 73.8%
+[Epoch:115] [400/400] | Loss: 1.757 | Ce: 1.974 | Entropy: 0.339 | GCC: 0.573 | Acc: 74.8%
+extracting......Extract Features: [1/302]	Time 1.441 (1.441)	Data 1.344 (1.344)	**Extract Features: [100/302]	Time 0.100 (0.108)	Data 0.000 (0.014)	**Extract Features: [200/302]	Time 0.102 (0.102)	Data 0.005 (0.007)	**Extract Features: [300/302]	Time 0.095 (0.100)	Data 0.000 (0.005)	**extracting done     
+Mean AP: 74.3%
+
+ * Finished epoch 115  model no.1 mAP: 74.3% best: 74.3%
+2022-05-14 02:51:45.040316
+Cost 10:09:31.478918
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.369 (1.369)	Data 1.272 (1.272)	**Extract Features: [100/203]	Time 0.095 (0.108)	Data 0.000 (0.013)	**Extract Features: [200/203]	Time 0.095 (0.102)	Data 0.000 (0.007)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:116] [001/400] | Loss: 1.620 | Ce: 2.028 | Entropy: 0.199 | GCC: 0.436 | Acc: 79.7%
+[Epoch:116] [100/400] | Loss: 1.534 | Ce: 1.801 | Entropy: 0.313 | GCC: 0.567 | Acc: 81.1%
+[Epoch:116] [200/400] | Loss: 1.556 | Ce: 1.799 | Entropy: 0.329 | GCC: 0.567 | Acc: 81.2%
+[Epoch:116] [300/400] | Loss: 1.536 | Ce: 1.761 | Entropy: 0.310 | GCC: 0.570 | Acc: 82.2%
+[Epoch:116] [400/400] | Loss: 1.536 | Ce: 1.748 | Entropy: 0.303 | GCC: 0.567 | Acc: 82.5%
+extracting......Extract Features: [1/302]	Time 1.184 (1.184)	Data 1.088 (1.088)	**Extract Features: [100/302]	Time 0.095 (0.106)	Data 0.000 (0.011)	**Extract Features: [200/302]	Time 0.094 (0.100)	Data 0.000 (0.006)	**Extract Features: [300/302]	Time 0.095 (0.098)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 74.3%
+
+ * Finished epoch 116  model no.1 mAP: 74.3% best: 74.3%
+2022-05-14 02:56:18.574695
+Cost 10:14:05.013285
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.149 (1.149)	Data 1.051 (1.051)	**Extract Features: [100/203]	Time 0.094 (0.106)	Data 0.000 (0.011)	**Extract Features: [200/203]	Time 0.095 (0.101)	Data 0.000 (0.005)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:117] [001/400] | Loss: 1.908 | Ce: 2.001 | Entropy: 0.282 | GCC: 0.567 | Acc: 76.6%
+[Epoch:117] [100/400] | Loss: 1.530 | Ce: 1.795 | Entropy: 0.311 | GCC: 0.563 | Acc: 80.4%
+[Epoch:117] [200/400] | Loss: 1.545 | Ce: 1.789 | Entropy: 0.321 | GCC: 0.557 | Acc: 80.8%
+[Epoch:117] [300/400] | Loss: 1.522 | Ce: 1.745 | Entropy: 0.305 | GCC: 0.561 | Acc: 82.3%
+[Epoch:117] [400/400] | Loss: 1.509 | Ce: 1.727 | Entropy: 0.296 | GCC: 0.554 | Acc: 82.8%
+extracting......Extract Features: [1/302]	Time 1.223 (1.223)	Data 1.127 (1.127)	**Extract Features: [100/302]	Time 0.095 (0.106)	Data 0.000 (0.011)	**Extract Features: [200/302]	Time 0.095 (0.101)	Data 0.000 (0.006)	**Extract Features: [300/302]	Time 0.094 (0.099)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 74.4%
+
+ * Finished epoch 117  model no.1 mAP: 74.4% best: 74.4% *
+2022-05-14 03:00:51.130704
+Cost 10:18:37.569297
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.130 (1.130)	Data 1.033 (1.033)	**Extract Features: [100/203]	Time 0.095 (0.105)	Data 0.000 (0.011)	**Extract Features: [200/203]	Time 0.095 (0.101)	Data 0.000 (0.005)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:118] [001/400] | Loss: 1.437 | Ce: 1.753 | Entropy: 0.178 | GCC: 0.481 | Acc: 79.7%
+[Epoch:118] [100/400] | Loss: 1.581 | Ce: 1.812 | Entropy: 0.324 | GCC: 0.592 | Acc: 79.5%
+[Epoch:118] [200/400] | Loss: 1.547 | Ce: 1.786 | Entropy: 0.321 | GCC: 0.564 | Acc: 80.4%
+[Epoch:118] [300/400] | Loss: 1.540 | Ce: 1.754 | Entropy: 0.307 | GCC: 0.575 | Acc: 81.8%
+[Epoch:118] [400/400] | Loss: 1.533 | Ce: 1.730 | Entropy: 0.299 | GCC: 0.576 | Acc: 82.8%
+extracting......Extract Features: [1/302]	Time 1.107 (1.107)	Data 1.010 (1.010)	**Extract Features: [100/302]	Time 0.095 (0.105)	Data 0.000 (0.010)	**Extract Features: [200/302]	Time 0.095 (0.100)	Data 0.000 (0.005)	**Extract Features: [300/302]	Time 0.094 (0.098)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 74.3%
+
+ * Finished epoch 118  model no.1 mAP: 74.3% best: 74.4%
+2022-05-14 03:05:22.387051
+Cost 10:23:08.825656
+log/imagenet2market_v2-lw0.6
+extracting......Extract Features: [1/203]	Time 1.137 (1.137)	Data 1.040 (1.040)	**Extract Features: [100/203]	Time 0.095 (0.105)	Data 0.000 (0.011)	**Extract Features: [200/203]	Time 0.097 (0.101)	Data 0.000 (0.005)	**extracting done     
+k-means
+
+ Clustering into 500 classes 
+
+learning rate 0.00035
+[Epoch:119] [001/400] | Loss: 1.549 | Ce: 1.841 | Entropy: 0.225 | GCC: 0.342 | Acc: 79.7%
+[Epoch:119] [100/400] | Loss: 1.543 | Ce: 1.809 | Entropy: 0.308 | GCC: 0.560 | Acc: 79.6%
+[Epoch:119] [200/400] | Loss: 1.539 | Ce: 1.785 | Entropy: 0.317 | GCC: 0.553 | Acc: 80.6%
+[Epoch:119] [300/400] | Loss: 1.535 | Ce: 1.761 | Entropy: 0.306 | GCC: 0.557 | Acc: 81.4%
+[Epoch:119] [400/400] | Loss: 1.515 | Ce: 1.730 | Entropy: 0.295 | GCC: 0.556 | Acc: 82.5%
+extracting......Extract Features: [1/302]	Time 1.121 (1.121)	Data 1.025 (1.025)	**Extract Features: [100/302]	Time 0.094 (0.105)	Data 0.000 (0.010)	**Extract Features: [200/302]	Time 0.095 (0.100)	Data 0.000 (0.005)	**Extract Features: [300/302]	Time 0.094 (0.098)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 74.1%
+
+ * Finished epoch 119  model no.1 mAP: 74.1% best: 74.4%
+2022-05-14 03:09:31.081589
+Cost 10:27:17.520183
+log/imagenet2market_v2-lw0.6
+Test on the best model.
+=> Loaded checkpoint 'log/imagenet2market_v2-lw0.6/model_best.pth.tar'
+extracting......Extract Features: [1/302]	Time 1.181 (1.181)	Data 1.084 (1.084)	**Extract Features: [100/302]	Time 0.094 (0.106)	Data 0.000 (0.011)	**Extract Features: [200/302]	Time 0.094 (0.101)	Data 0.000 (0.006)	**Extract Features: [300/302]	Time 0.094 (0.098)	Data 0.000 (0.004)	**extracting done     
+Mean AP: 74.4%
+CMC Scores:
+  top-1          90.1%
+  top-5          96.6%
+  top-10         98.0%
+
+2022-05-14 03:10:18.891531
+Cost 10:28:05.330154
