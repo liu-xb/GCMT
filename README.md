@@ -17,10 +17,10 @@ Codes of our IJCAI 2021 paper "Graph Consistency based Mean-Teaching for Unsuper
     url       = {https://doi.org/10.24963/ijcai.2021/121},
     }
 
-## Training
-Run `sh train.sh` will train the unsupervised model on Market-1501 dataset. The unsupervised model along with training log can be found in folder `log/`. The trained GCMT model achieves 74.0% and 90.4% in mAP and Rank1 accuracy, respectively. 
+## Training & Performance
+Run `sh train.sh` will train the unsupervised model on Market-1501 dataset. The training log can be found in folder `log/`. The trained GCMT model achieves 74.0% and 90.4% in mAP and Rank1 accuracy, respectively. 
 
-We find that applying the temperature parameter when computing weights in the teacher graph in Eqn.(5) slightly improves the performance. The resulting model is called GCMTv2 and can be obtained by running `sh train_v2.sh`. The model trained by soft triplet loss can be obtained by running `sh soft_triplet_train.sh`. All the aforementioned models and logs can be found in folder `log/`. The comparison among GCMT, GCMTv2, soft triplet loss, and baseline is shown in the following figure. 
+We find that applying the temperature parameter when computing weights in the teacher graph in Eqn.(5) slightly improves the performance. The resulting model is called GCMTv2 and can be obtained by running `sh train_v2.sh`. The model trained by soft triplet loss can be obtained by running `sh soft_triplet_train.sh`. All the training logs can be found in folder `log/`. The comparison among GCMT, GCMTv2, soft triplet loss, and baseline is shown in the following figure. 
 <img src='accuracy.jpg' width = '100%' >
 It can be inferred from the figure that more epochs may improve the performance. We will try more epochs in the future. (As DukeMTMC-reID dataset is no longer available, we do not release models related with this dataset.)
 
