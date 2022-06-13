@@ -25,4 +25,4 @@ We find that applying the temperature parameter when computing weights in the te
 It can be inferred from the figure that more epochs may improve the performance. We will try more epochs in the future. (As DukeMTMC-reID dataset is no longer available, we do not release models related with this dataset.)
 
 ## About more epochs
-Training the model for 400 epoch, the mAP accuracy on Market-1501 dataset reachs ~78%!
+Training the model for 400 epochs, the mAP accuracy on Market-1501 dataset reachs ~78%!
